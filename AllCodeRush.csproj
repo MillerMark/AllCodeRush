@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -61,6 +62,57 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Code\Conditionals\CaseToConditional.cs" />
+    <Compile Include="Code\Conditionals\CompressToNullCoalesingOperation.cs" />
+    <Compile Include="Code\Conditionals\CompressToTernaryExpression.cs" />
+    <Compile Include="Code\Conditionals\ConditionalToCase.cs" />
+    <Compile Include="Code\Conditionals\ExpandNullCoalesingOperation.cs" />
+    <Compile Include="Code\Conditionals\ExpandTernaryCondition.cs" />
+    <Compile Include="Code\Conditionals\InitializeConditionally.cs" />
+    <Compile Include="Code\Declaration + Initialization\AddContract.cs" />
+    <Compile Include="Code\Declaration + Initialization\AddMissingConstructors.cs" />
+    <Compile Include="Code\Declaration + Initialization\DeclareAttribute.cs" />
+    <Compile Include="Code\Declaration + Initialization\DeclareConstructor.cs" />
+    <Compile Include="Code\Declaration + Initialization\DeclareEnum.cs" />
+    <Compile Include="Code\Declaration + Initialization\DeclareEnumElement.cs" />
+    <Compile Include="Code\Declaration + Initialization\DeclareLocal.cs" />
+    <Compile Include="Code\Declaration + Initialization\DeclareLocalImplicit.cs" />
+    <Compile Include="Code\Declaration + Initialization\ConvertToConstant.cs" />
+    <Compile Include="Code\Declaration + Initialization\ConvertToInitializer.cs" />
+    <Compile Include="Code\Declaration + Initialization\DecomposeInitializer.cs" />
+    <Compile Include="Code\Declaration + Initialization\MakeExplicit.cs" />
+    <Compile Include="Code\Declaration + Initialization\MakeImplicit.cs" />
+    <Compile Include="Code\Declaration + Initialization\NameAnonymousType.cs" />
+    <Compile Include="Code\Declaration + Initialization\RemoveAssignmentsToParameter.cs" />
+    <Compile Include="Code\Declaration + Initialization\UseNamedArguments.cs" />
+    <Compile Include="Code\Declaration + Initialization\Utility\Building.cs" />
+    <Compile Include="Code\Declaration + Initialization\Utility\Person.cs" />
+    <Compile Include="Code\Expressions\CreateCaseBlocksFromEnum.cs" />
+    <Compile Include="Code\Expressions\CreateOverload.cs" />
+    <Compile Include="Code\Expressions\InlineConstant.cs" />
+    <Compile Include="Code\Expressions\InlineRecentAssignment.cs" />
+    <Compile Include="Code\Expressions\InlineResult.cs" />
+    <Compile Include="Code\Expressions\InlineTemp.cs" />
+    <Compile Include="Code\Expressions\IntroduceConstant.cs" />
+    <Compile Include="Code\Expressions\IntroduceConstantLocal.cs" />
+    <Compile Include="Code\Expressions\IntroduceLocal.cs" />
+    <Compile Include="Code\Expressions\IntroduceLocalReplaceAll.cs" />
+    <Compile Include="Code\Expressions\IntroduceResultVariable.cs" />
+    <Compile Include="Code\Expressions\ReplaceTempWithQuery.cs" />
+    <Compile Include="Code\Expressions\ReplaceWithConstant.cs" />
+    <Compile Include="Code\Expressions\ReplaceWithLocal.cs" />
+    <Compile Include="Code\Methods\DeclareMethod.cs" />
+    <Compile Include="Code\Methods\DeclareMethodAbstract.cs" />
+    <Compile Include="Code\Methods\Parameters\DecomposeParameter.cs" />
+    <Compile Include="Code\Methods\Parameters\IntroduceParameterObject.cs" />
+    <Compile Include="Code\Methods\Parameters\PromoteToParameter.cs" />
+    <Compile Include="Code\Methods\Parameters\PromoteToParameterOptional.cs" />
+    <Compile Include="Code\Methods\ExtractMethod.cs" />
+    <Compile Include="Code\Methods\InlineMethod.cs" />
+    <Compile Include="Code\Methods\InlineMethodAndDelete.cs" />
+    <Compile Include="Code\Methods\MakeMemberNonStatic.cs" />
+    <Compile Include="Code\Methods\MakeMemberStatic.cs" />
+    <Compile Include="Code\Methods\PullMemberUp.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -136,15 +188,11 @@
     <Folder Include="Code\Attributes\" />
     <Folder Include="Code\Clipboard\" />
     <Folder Include="Code\Comments + Regions\" />
-    <Folder Include="Code\Conditionals\" />
     <Folder Include="Code\Dead Code\" />
-    <Folder Include="Code\Declaration + Initialization\" />
     <Folder Include="Code\Events + Delegates\" />
-    <Folder Include="Code\Expressions\" />
     <Folder Include="Code\Formatting\" />
     <Folder Include="Code\Lambda Expressions + Anonymous Methods\" />
     <Folder Include="Code\Loops + Blocks\" />
-    <Folder Include="Code\Methods\Parameters\" />
     <Folder Include="Code\Namespaces + Type Qualifiers\" />
     <Folder Include="Code\Parallel Computing\" />
     <Folder Include="Code\Properties + Fields\" />
