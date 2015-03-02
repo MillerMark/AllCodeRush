@@ -5,38 +5,52 @@ using System.Text;
 
 namespace AllCodeRush.Code.Conditionals
 {
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Case To Conditional
+     * 
+     * Use Case: Lets you convert series of nested if..else to 
+     * a switch\select statement.
+     *  
+     * Available: When the caret is on an if statement that has 
+     * a corresponding else block.
+     * 
+     * See also: Case To Conditional
+     * •———————————————————————————————————————————————————————• */
+
     public class ConditionalToCase
     {
-        public enum Suit
+        public double CalculateDiscountPCent(CustomerType customerType)
         {
-            Spades,
-            Hearts,
-            Clubs,
-            Diamonds
-        }
-        public string SuitToString(Suit suit)
-        {
-            if (suit == Suit.Spades)
-            {
-                return "Spades";
-            }
-            else if (suit == Suit.Hearts)
-            {
-                return "Hearts";
-            }
-            else if (suit == Suit.Clubs)
-            {
-                return "Clubs";
-            }
-            else if (suit == Suit.Diamonds)
-            {
-                return "Diamonds";
-            }
+            if (customerType == CustomerType.Platinum)
+                return 15.0;
             else
             {
-                throw new Exception("This cannot happen");
+                if (customerType == CustomerType.Gold)
+                    return 10.0;
+                else
+                {
+                    if (customerType == CustomerType.Silver)
+                        return 5.0;
+                    else
+                    {
+                        if (customerType == CustomerType.Bronze)
+                            return 2.5;
+                        else
+                        {
+                            throw new Exception("This cannot happen");
+                        }
+                    }
+                }
             }
-
         }
+        #region Support Code
+        public enum CustomerType
+        {
+            Platinum,
+            Gold,
+            Silver,
+            Bronze
+        }
+        #endregion
     }
 }
