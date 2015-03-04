@@ -19,6 +19,7 @@ namespace AllCodeRush.Code.Conditionals
 
     public class ConditionalToCase
     {
+        #region Example1
         public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
         {
             if (discountLevel == DiscountLevelEnum.Platinum)
@@ -43,6 +44,24 @@ namespace AllCodeRush.Code.Conditionals
                 }
             }
         }
+        #endregion
+        
+        #region Example2
+        public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
+        {
+            if (discountLevel == DiscountLevelEnum.Platinum)
+                return 15.0;
+            else if (discountLevel == DiscountLevelEnum.Gold)
+                return 10.0;
+            else if (discountLevel == DiscountLevelEnum.Silver)
+                return 5.0;
+            else if (discountLevel == DiscountLevelEnum.Bronze)
+                return 2.5;
+            else
+                throw new Exception("This cannot happen");
+        }
+        #endregion
+
         #region Support Code
         public enum DiscountLevelEnum
         {

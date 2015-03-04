@@ -22,13 +22,10 @@ namespace AllCodeRush.Code.Conditionals
 
     public class CompressToNullCoalescingOperation
     {
-        private string _name;
-        public string Name
+        private string _Value;
+        public string GetValue()
         {
-            get
-            {
-                return _name == null ? "Default" : _name;
-            }
+            return _Value == null ? "Default" : _Value;
         }
     }
 }

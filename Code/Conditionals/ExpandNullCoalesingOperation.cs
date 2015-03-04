@@ -19,13 +19,10 @@ namespace AllCodeRush.Code.Conditionals
 
     public class ExpandNullCoalesingOperation
     {
-        private string _name;
-        public string Name
+        private string _Value;
+        public string GetValue()
         {
-            get
-            {
-                return _name ?? "Default";
-            }
+            return _Value ?? "Default";
         }
     }
 }
