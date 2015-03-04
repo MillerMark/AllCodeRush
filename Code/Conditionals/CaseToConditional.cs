@@ -1,47 +1,26 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using AllCodeRush.Code.Conditionals.Support;
 
 namespace AllCodeRush.Code.Conditionals
 {
-    /* •———————————————————————————————————————————————————————•
-     * Feature: Case To Conditional
-     * 
-     * Use Case: Lets you convert a switch\select statement into 
-     * a series of nested if..else
-     *  
-     * Available: When the caret is on the 'switch'\'Select' 
-     * keyword.
-     * 
-     * See also: Conditional To Case 
-     * •———————————————————————————————————————————————————————• */
-    public class CaseToConditional
+  public class CaseToConditional
+  {
+    public decimal GetDiscount(CustomerType customerType)
     {
-        public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
-        {
-            switch (discountLevel)
-            {
-                case DiscountLevelEnum.Platinum:
-                    return 15.0;
-                case DiscountLevelEnum.Gold:
-                    return 10.0;
-                case DiscountLevelEnum.Silver:
-                    return 5.0;
-                case DiscountLevelEnum.Bronze:
-                    return 2.5;
-                default:
-                    throw new Exception("This cannot happen");
-            }
-        }
-        #region Support Code
-        public enum DiscountLevelEnum
-        {
-            Platinum,
-            Gold,
-            Silver,
-            Bronze
-        }
-        #endregion
+      switch (customerType)
+      {
+        case CustomerType.Prospect:
+          return 0.25m;
+        case CustomerType.FirstTimeCustomer:
+          return 0.15m;
+        case CustomerType.ProblemCustomer:
+          return 0m;
+        case CustomerType.GoodCustomer:
+          return 0.1m;
+        case CustomerType.VeryImportantCustomer:
+          return 0.2m;
+      }
+      return 0;
     }
+  }
 }

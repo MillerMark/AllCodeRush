@@ -62,10 +62,21 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Code\Conditionals\AddElseStatement.cs" />
     <Compile Include="Code\Conditionals\CaseToConditional.cs" />
+    <Compile Include="Code\Conditionals\CombineConditionalsNested.cs" />
+    <Compile Include="Code\Conditionals\CombineConditionalsParallel.cs" />
+    <Compile Include="Code\Conditionals\ConditionalToCase.cs" />
+    <Compile Include="Code\Conditionals\ReverseConditional.cs" />
+    <Compile Include="Code\Conditionals\SplitConditional.cs" />
+    <Compile Include="Code\Conditionals\SplitConditionalAndDuplicateElseBlock.cs" />
+    <Compile Include="Code\Conditionals\Support\Customer.cs" />
+    <Compile Include="Code\Conditionals\FlattenConditional.cs" />
+    <Compile Include="Code\Conditionals\Support\Movie.cs" />
+    <Compile Include="Code\Conditionals\Support\RentalFacility.cs" />
+    <Compile Include="Code\Conditionals\Support\CustomerType.cs" />
     <Compile Include="Code\Conditionals\CompressToNullCoalescingOperation.cs" />
     <Compile Include="Code\Conditionals\CompressToTernaryExpression.cs" />
-    <Compile Include="Code\Conditionals\ConditionalToCase.cs" />
     <Compile Include="Code\Conditionals\ExpandNullCoalesingOperation.cs" />
     <Compile Include="Code\Conditionals\ExpandTernaryExpression.cs" />
     <Compile Include="Code\Conditionals\InitializeConditionaly.cs" />
