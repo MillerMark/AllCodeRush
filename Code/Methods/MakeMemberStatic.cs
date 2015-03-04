@@ -5,6 +5,19 @@ using System.Text;
 
 namespace AllCodeRush.Code.Methods
 {
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Make Member Static
+     * 
+     * Use Case: Lets you make a member static and updates all 
+     * references accordingly.
+     *  
+     * Available: When the cursor is on a non-static method 
+     * declaration. The method shouldn't reference instance 
+     * members of its class.
+     * 
+     * See also: Make Member Non-Static
+     * •———————————————————————————————————————————————————————• */
+
     public class MakeMemberStatic
     {
         // Place caret in signature of function and invoke 'Make Member Static'

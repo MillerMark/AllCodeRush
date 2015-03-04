@@ -5,6 +5,21 @@ using System.Text;
 
 namespace AllCodeRush.Code.Methods.Parameters
 {
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Introduce Parameter Object
+     * 
+     * Use Case: Lets you consolidates selected parameters into 
+     * a single structure.
+     *  
+     * Available: 
+     *  - When the caret is on a method declaration or call, 
+     *  with more than one parameter.
+     *  - When two or more parameters are selected in a method 
+     *  declaration or call.
+     * 
+     * See also: Decompose Parameter
+     * •———————————————————————————————————————————————————————• */
+
     public class IntroduceParameterObject
     {
         public void Foo()
