@@ -5,33 +5,35 @@ using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Create Case Blocks From Enum
+     * 
+     * Use Case: Generates Case statements for each element of 
+     * the current enum.
+     *  
+     * Available: When the caret is placed on a reference to an 
+     * enum.
+     * •———————————————————————————————————————————————————————• */
+
     public class CreateCaseBlocksFromEnum
     {
-        private enum Suit
+        private enum DiscountLevelEnum
         {
-            Spades,
-            Hearts,
-            Clubs,
-            Diamonds
+            Platinum,
+            Gold,
+            Silver,
+            Bronze
         }
         private void Test()
         {
-            Suit suit = GetRandomSuit();
+            DiscountLevelEnum DiscountLevel = GetDiscountLevel();
         }
 
         #region Utility
-        private Suit GetRandomSuit()
+        private DiscountLevelEnum GetDiscountLevel()
         {
-            return (Suit)(new System.Random().Next(3));
+            return (DiscountLevelEnum)(new System.Random().Next(3));
         }
         #endregion
-    }
-    public class UseEqualityOperator
-    {
-        private void TestEquality()
-        {
-            //TODO: Does Not appear to work.
-            bool result = 1.Equals(2);
-        }
     }
 }

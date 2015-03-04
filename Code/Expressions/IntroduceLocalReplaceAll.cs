@@ -5,6 +5,19 @@ using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Introduce Local (Replace All)
+     * 
+     * Use Case: Lets you create a new local variable 
+     * initialized with the selected expression. 
+     * Note: This operation replaces other instances of the 
+     * expression with same local.
+     *  
+     * Available: When an expression is selected.
+     * 
+     * See also: Inline Local, Introduce Local
+     * •———————————————————————————————————————————————————————• */
+
     public class IntroduceLocalReplaceAll
     {
         #region Example1
