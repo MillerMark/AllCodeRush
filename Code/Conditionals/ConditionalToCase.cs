@@ -19,21 +19,21 @@ namespace AllCodeRush.Code.Conditionals
 
     public class ConditionalToCase
     {
-        public double CalculateDiscountPCent(CustomerType customerType)
+        public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
         {
-            if (customerType == CustomerType.Platinum)
+            if (discountLevel == DiscountLevelEnum.Platinum)
                 return 15.0;
             else
             {
-                if (customerType == CustomerType.Gold)
+                if (discountLevel == DiscountLevelEnum.Gold)
                     return 10.0;
                 else
                 {
-                    if (customerType == CustomerType.Silver)
+                    if (discountLevel == DiscountLevelEnum.Silver)
                         return 5.0;
                     else
                     {
-                        if (customerType == CustomerType.Bronze)
+                        if (discountLevel == DiscountLevelEnum.Bronze)
                             return 2.5;
                         else
                         {
@@ -44,7 +44,7 @@ namespace AllCodeRush.Code.Conditionals
             }
         }
         #region Support Code
-        public enum CustomerType
+        public enum DiscountLevelEnum
         {
             Platinum,
             Gold,

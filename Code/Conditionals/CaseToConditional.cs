@@ -18,24 +18,24 @@ namespace AllCodeRush.Code.Conditionals
      * •———————————————————————————————————————————————————————• */
     public class CaseToConditional
     {
-        public double CalculateDiscountPCent(CustomerType customerType)
+        public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
         {
-            switch (customerType)
+            switch (discountLevel)
             {
-                case CustomerType.Platinum:
+                case DiscountLevelEnum.Platinum:
                     return 15.0;
-                case CustomerType.Gold:
+                case DiscountLevelEnum.Gold:
                     return 10.0;
-                case CustomerType.Silver:
+                case DiscountLevelEnum.Silver:
                     return 5.0;
-                case CustomerType.Bronze:
+                case DiscountLevelEnum.Bronze:
                     return 2.5;
                 default:
                     throw new Exception("This cannot happen");
             }
         }
         #region Support Code
-        public enum CustomerType
+        public enum DiscountLevelEnum
         {
             Platinum,
             Gold,
