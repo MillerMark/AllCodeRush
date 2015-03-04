@@ -7,27 +7,40 @@ using System.Drawing;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Declare Enum Element
+     * 
+     * Use Case: Lets you add an element to a preexisting enum 
+     * declaration by example.
+     *  
+     * Available: When the caret is on a reference to an 
+     * undeclared enumeration element.
+     * •———————————————————————————————————————————————————————• */
+
     public class DeclareEnumElement
     {
-        public enum Suit
+        public enum DiscountLevelEnum
         {
-            Spades,
-            Clubs,
-            Diamonds
+            Platinum, 
+            Gold,
+            Silver,
         }
-        public Color GetSuitColor(Suit suit)
+        public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
         {
-            switch (suit)
+            switch (discountLevel)
             {
-                case Suit.Spades:
-                    return Color.Black;
-                case Suit.Clubs:
-                    return Color.Black;
-                case Suit.Diamonds:
-                    return Color.Red;
-                case Suit.Hearts:
-                    return Color.Red;
+                case DiscountLevelEnum.Platinum:
+                    return 15.0;
+                case DiscountLevelEnum.Gold:
+                    return 10.0;
+                case DiscountLevelEnum.Silver:
+                    return 5.0;
+                case DiscountLevelEnum.Bronze:
+                    return 2.5;
+                default:
+                    throw new Exception("This cannot happen");
             }
         }
     }
+    
 }

@@ -6,12 +6,20 @@ using System.Data;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-    //TODO:  Does not appear to work in 14.2.3
+    /* •———————————————————————————————————————————————————————•
+     * Feature: Declare Constructor
+     * 
+     * Use Case: Lets you generate a class Constructor by example.
+     *  
+     * Available: When the caret is on a reference to an 
+     * undeclared constructor.
+     * •———————————————————————————————————————————————————————• */
+
     public class DeclareConstructor
     {
         public SimplePersonClass CreateRory()
         {
-            var Name = "Rory";
+            var Name = "Bob";
             var Age = 37;
             SimplePersonClass person = new SimplePersonClass(Name, Age);
             return person;
