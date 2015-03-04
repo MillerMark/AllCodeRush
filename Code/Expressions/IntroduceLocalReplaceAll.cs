@@ -7,17 +7,34 @@ namespace AllCodeRush.Code.Expressions
 {
     public class IntroduceLocalReplaceAll
     {
-        public void Calculate()
+        #region Example1
+        public static double CalculateDistance(double y2, double y1, double x2, double x1)
         {
-            int a = 1, b = 2, c = 3;
-
-            int result = (a + b) * (a + b) / c;
-            int result2 = (a + b) * 5;
-            int result3 = a + b + 42 * (a + b);
-            // Note the follow a + b is not picked up.
-            int result4 = 42 + a + b * (a + b);
-            // but this one is
-            int result5 = 42 + a + b;
+            return Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
         }
+        #endregion
+
+        #region Example2
+        public void DynamicCreate()
+        {
+            DataSet dataSet = new DataSet();
+            DataTable dt = new DataTable();
+            dt.Columns.Add(new DataColumn("ID", Type.GetType("System.Int32")));
+            dt.Columns.Add(new DataColumn("Name", Type.GetType("System.String")));
+            AddRow(dt, 1, "First Row");
+            AddRow(dt, 2, "Second Row");
+            dataSet.Tables.Add(dt);
+            for (int i = 0; i <= dataSet.Tables[0].Rows.Count - 1; i++)
+                Console.WriteLine(dataSet.Tables[0].Rows[i].ItemArray[0] + " -- " + dataSet.Tables[0].Rows[i].ItemArray[1]);
+        }
+        private static void AddRow(DataTable dt, int id, string name)
+        {
+            DataRow dr = dt.NewRow();
+            dr["ID"] = id;
+            dr["Name"] = name;
+            dt.Rows.Add(dr);
+        }
+                #endregion
     }
 }
+
