@@ -3,6 +3,20 @@ using System.Linq;
 using System.Data;
 namespace AllCodeRush.Code.Conditionals
 {
+  /* •———————————————————————————————————————————————————————•
+      Feature: Add Else Statement
+                                                            
+      Use Case: Adds an else statement.
+                                                            
+      Available: When the caret is on the "if" keyword of
+      an if-statement that does not have a corresponding else
+      block.
+    
+      Related Refactorings: Flatten Conditional 
+ 
+      See Also:
+        Templates: "l", "lb" (see "Conditional Templates" video)
+     •———————————————————————————————————————————————————————• */
   public class AddElseStatement
   {
     public static bool Mod10Check(string creditCardNumber)

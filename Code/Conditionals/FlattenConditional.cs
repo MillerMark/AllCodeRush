@@ -3,8 +3,32 @@ using AllCodeRush.Code.Conditionals.Support;
 
 namespace AllCodeRush.Code.Conditionals
 {
+  /* •———————————————————————————————————————————————————————•
+      Feature: Flatten Conditional
+                                                            
+      Use Case: Reduces the size (line count) of a conditional.
+                                                            
+      Available: When the caret is on the "if" keyword of
+      an if-statement that has more lines of code than 
+      necessary.
+    
+      Related Refactorings: Add Else Statement, 
+                            Combine Conditionals
+     •———————————————————————————————————————————————————————• */
+
   public class FlattenConditional
   {
+    public static bool IsValidCard(string creditCardNumber)
+    {
+      if (string.IsNullOrEmpty(creditCardNumber))
+        return false;
+      else
+      {
+
+      }
+      return true;
+    }
+
     public static bool AnyTrue(bool a, bool b, bool c)
     {
       if (a || b || c)

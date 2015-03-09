@@ -3,6 +3,16 @@ using AllCodeRush.Code.Conditionals.Support;
 
 namespace AllCodeRush.Code.Conditionals
 {
+  /* •———————————————————————————————————————————————————————•
+      Feature: Reverse Conditional
+                                                            
+      Use Case: Reverses the if/else blocks and negates the 
+      expression. Useful when the expression of an if-block
+      would be easier to read when negated.
+                                                            
+      Available: When the caret is on the "if" keyword of
+      an if-statement with a corresponding else block.
+     •———————————————————————————————————————————————————————• */
   public class ReverseConditional
   {
     public bool IsNorthWestOrSouthEast(double angle)

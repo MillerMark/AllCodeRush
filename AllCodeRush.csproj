@@ -77,9 +77,9 @@
     <Compile Include="Code\Conditionals\Support\CustomerType.cs" />
     <Compile Include="Code\Conditionals\CompressToNullCoalescingOperation.cs" />
     <Compile Include="Code\Conditionals\CompressToTernaryExpression.cs" />
-    <Compile Include="Code\Conditionals\ExpandNullCoalesingOperation.cs" />
+    <Compile Include="Code\Conditionals\ExpandNullCoalescingOperation.cs" />
     <Compile Include="Code\Conditionals\ExpandTernaryExpression.cs" />
-    <Compile Include="Code\Conditionals\InitializeConditionaly.cs" />
+    <Compile Include="Code\Conditionals\InitializeConditionally.cs" />
     <Compile Include="Code\Declaration + Initialization\AddContract.cs" />
     <Compile Include="Code\Declaration + Initialization\AddMissingConstructors.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareAttribute.cs" />

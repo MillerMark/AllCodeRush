@@ -2,19 +2,19 @@ using System;
 
 namespace AllCodeRush.Code.Conditionals
 {
-  /* •———————————————————————————————————————————————————————•
+  /* •—————————————————————————————————————————————————————————————•
       Feature: Split Conditional
                                                             
       Use Case: Lets you break apart a single conditional
       if-statement having multiple expressions into two
-      or more conditionals.
+      or more conditional statements.
                                                             
       Available: When the caret is on the "if" keyword of
-      an if-statement having two or more child expressions.
+      an if-statement having two or more logical child 
+      expressions.
     
-      See Also: Combine Conditionals (nested and parallel)
-     •———————————————————————————————————————————————————————• */
-
+      Related Refactorings: Combine Conditionals (nested & parallel)
+     •—————————————————————————————————————————————————————————————• */
   public class SplitConditional
   {
     public static bool AllTrue(bool a, bool b, bool c)
