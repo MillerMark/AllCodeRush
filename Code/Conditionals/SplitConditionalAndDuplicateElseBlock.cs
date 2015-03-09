@@ -10,6 +10,9 @@ namespace AllCodeRush.Code.Conditionals
       Available: 
     
       Related Refactorings: Combine Conditionals
+   
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
   public class SplitConditionalAndDuplicateElseBlock
   {

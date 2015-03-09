@@ -14,6 +14,9 @@ namespace AllCodeRush.Code.Conditionals
       expressions.
     
       Related Refactorings: Combine Conditionals (nested & parallel)
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •—————————————————————————————————————————————————————————————• */
   public class SplitConditional
   {

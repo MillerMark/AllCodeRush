@@ -14,7 +14,10 @@ namespace AllCodeRush.Code.Conditionals
       Available: When the caret is on the 'switch'\'Select' 
       keyword.
         
-      Related Refactorings: Conditional To Case 
+      Related Refactorings: Conditional To Case
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
   public class CaseToConditional
   {

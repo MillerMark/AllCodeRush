@@ -19,6 +19,9 @@ namespace AllCodeRush.Code.Conditionals
         
       Related Refactorings: Expand Null Coalescing Ternary 
                             Condition.
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
 
   public class CompressToNullCoalescingOperation

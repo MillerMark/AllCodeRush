@@ -14,6 +14,9 @@ namespace AllCodeRush.Code.Conditionals
     
       Related Refactorings: Add Else Statement, 
                             Combine Conditionals
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
 
   public class FlattenConditional

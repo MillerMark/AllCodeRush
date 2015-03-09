@@ -15,6 +15,9 @@ namespace AllCodeRush.Code.Conditionals
       a corresponding else block.
         
       Related Refactorings: Case To Conditional
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
 
   public class ConditionalToCase

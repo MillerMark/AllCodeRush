@@ -12,6 +12,9 @@ namespace AllCodeRush.Code.Conditionals
                                                             
       Available: When the caret is on the "if" keyword of
       an if-statement with a corresponding else block.
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
   public class ReverseConditional
   {

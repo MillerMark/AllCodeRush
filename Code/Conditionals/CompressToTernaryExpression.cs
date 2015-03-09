@@ -18,6 +18,9 @@ namespace AllCodeRush.Code.Conditionals
          calls with different arguments.
         
       Related Refactorings: Expand Ternary Condition
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video. 
      •———————————————————————————————————————————————————————• */
 
   public class CompressToTernaryExpression

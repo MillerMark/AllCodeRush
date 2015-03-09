@@ -15,6 +15,9 @@ namespace AllCodeRush.Code.Conditionals
       that uses the ?? operator.
         
       Related Refactorings: Compress To Null Coalescing Operation
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •—————————————————————————————————————————————————————————————• */
   public class ExpandNullCoalescingOperation
   {

@@ -15,6 +15,9 @@ namespace AllCodeRush.Code.Conditionals
       a ternary operator.
         
       Related Refactorings: Compress to Ternary Expression
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
 
   public class ExpandTernaryExpression

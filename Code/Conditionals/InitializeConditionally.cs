@@ -15,6 +15,9 @@ namespace AllCodeRush.Code.Conditionals
       Available: When the cursor is on a variable initialization
       provided that the following if block contains an assignment 
       statement for this variable.
+           
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •———————————————————————————————————————————————————————• */
 
   public class InitializeConditionally

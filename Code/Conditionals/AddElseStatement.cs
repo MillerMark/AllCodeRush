@@ -16,6 +16,9 @@ namespace AllCodeRush.Code.Conditionals
  
       See Also:
         Templates: "l", "lb" (see "Conditional Templates" video)
+        
+      For more information on formatting code, see the "Code 
+      Formatting" video.
      •——————————————————————————————————————————————————————————• */
   public class AddElseStatement
   {
