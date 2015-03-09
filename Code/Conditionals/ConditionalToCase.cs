@@ -6,16 +6,16 @@ using System.Text;
 namespace AllCodeRush.Code.Conditionals
 {
     /* •———————————————————————————————————————————————————————•
-     * Feature: Case To Conditional
-     * 
-     * Use Case: Lets you convert series of nested if..else to 
-     * a switch\select statement.
-     *  
-     * Available: When the caret is on an if statement that has 
-     * a corresponding else block.
-     * 
-     * See also: Case To Conditional
-     * •———————————————————————————————————————————————————————• */
+        Feature: Case To Conditional
+        
+        Use Case: Lets you convert series of nested if..else to 
+        a switch\select statement.
+         
+        Available: When the caret is on an if statement that has 
+        a corresponding else block.
+        
+        See also: Case To Conditional
+       •———————————————————————————————————————————————————————• */
 
     public class ConditionalToCase
     {

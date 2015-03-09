@@ -18,7 +18,7 @@ namespace AllCodeRush.Code.Conditionals
      * •———————————————————————————————————————————————————————• */
     public class CaseToConditional
     {
-        public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
+        public double CalculateDiscountPercent(DiscountLevelEnum discountLevel)
         {
             switch (discountLevel)
             {
