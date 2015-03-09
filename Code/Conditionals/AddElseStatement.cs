@@ -3,7 +3,7 @@ using System.Linq;
 using System.Data;
 namespace AllCodeRush.Code.Conditionals
 {
-  /* •———————————————————————————————————————————————————————•
+  /* •——————————————————————————————————————————————————————————•
       Feature: Add Else Statement
                                                             
       Use Case: Adds an else statement.
@@ -16,7 +16,7 @@ namespace AllCodeRush.Code.Conditionals
  
       See Also:
         Templates: "l", "lb" (see "Conditional Templates" video)
-     •———————————————————————————————————————————————————————• */
+     •——————————————————————————————————————————————————————————• */
   public class AddElseStatement
   {
     public static bool Mod10Check(string creditCardNumber)
