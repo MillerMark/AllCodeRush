@@ -38,7 +38,7 @@ namespace AllCodeRush.Code.Conditionals
 
     public static bool SomeTrue(bool a, bool b, bool c)
     {
-      if (a && b || c)
+      if (a || b && c)
         return true;
 
       return false;

@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Conditionals
 {
@@ -11,7 +8,7 @@ namespace AllCodeRush.Code.Conditionals
       Use Case: Lets you convert an if/else conditional into a
       Ternary Expression.
          
-      Available: When the caret is on a if statement that has the 
+      Available: When the caret is on an if statement that has a 
       corresponding else block. 
        - Both if and else blocks should contain one statement. 
        - These statements should be similar assignments or method 
@@ -25,12 +22,12 @@ namespace AllCodeRush.Code.Conditionals
 
   public class CompressToTernaryExpression
   {
-    public static string isPositive(int input)
+    public static string GetZeroStr(int input)
     {
-      if (input >= 0)
-        return "positive";
+      if (input == 0)
+        return "zero";
       else
-        return "negative";
+        return "non-zero";
     }
   }
 }

@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Conditionals
                                                             
       Use Case: Reduces the size (line count) of a conditional.
                                                             
-      Available: When the caret is on the "if" keyword of
+      Availability: When the caret is on the "if" keyword of
       an if-statement that has more lines of code than 
       necessary.
     
@@ -25,10 +25,7 @@ namespace AllCodeRush.Code.Conditionals
     {
       if (string.IsNullOrEmpty(creditCardNumber))
         return false;
-      else
-      {
 
-      }
       return true;
     }
 
@@ -38,6 +35,14 @@ namespace AllCodeRush.Code.Conditionals
         return true;
       else
         return false;
+    }
+
+    public static int AnyTrue(bool a, bool b, bool c)
+    {
+      if (a || b || c)
+        return 1;
+      else
+        return 0;
     }
 
     public static void RentMovie(bool parentalControls, int minAgeForThisMovie, Guid movieID, Customer customer)

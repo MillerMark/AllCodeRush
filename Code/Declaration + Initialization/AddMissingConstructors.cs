@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
@@ -16,22 +12,23 @@ namespace AllCodeRush.Code.DeclarationInitialization
 		  one constructor that is not implemented in the current class. 
 		 •———————————————————————————————————————————————————————• */
 
-	public class AddMissingConstructors : baseclass
+	public class AddMissingConstructors : AspectRatio
 	{
-
 	}
 
-	#region Misc
-	public class baseclass
+	public class AspectRatio
 	{
-		public baseclass(int height)
-		{
+    private readonly int height;
+    private readonly int width;
 
+    public AspectRatio(int edge): this(edge, edge)
+		{
+      
 		}
-		public baseclass(int height, int width)
+		public AspectRatio(int height, int width)
 		{
-
+      this.width = width;
+      this.height = height;
 		}
 	}
-	#endregion
 }

@@ -82,6 +82,7 @@
     <Compile Include="Code\Conditionals\InitializeConditionally.cs" />
     <Compile Include="Code\Declaration + Initialization\AddContract.cs" />
     <Compile Include="Code\Declaration + Initialization\AddMissingConstructors.cs" />
+    <Compile Include="Code\Declaration + Initialization\CustomAttribute.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareAttribute.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareConstructor.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareEnum.cs" />

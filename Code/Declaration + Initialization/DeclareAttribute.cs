@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
@@ -15,7 +11,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 		  undeclared attribute.
 		 •———————————————————————————————————————————————————————• */
 
-	[CustomAttribute()]
+	[CustomAttribute(Name="Super", Count=4)]
 	public class DeclareAttribute
 	{
 

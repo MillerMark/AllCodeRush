@@ -1,5 +1,4 @@
 using System;
-using AllCodeRush.Code.Conditionals.Support;
 
 namespace AllCodeRush.Code.Conditionals
 {

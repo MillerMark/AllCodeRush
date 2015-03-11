@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
@@ -10,17 +7,23 @@ namespace AllCodeRush.Code.DeclarationInitialization
         
 		  Use Case: Lets you convert a variable to a constant.
          
-		  Available: When the cursor is on a string variable or 
-		  field declaration with initialization, provided that its 
-		  value is never changed.
+		  Available: When the caret is on a local variable or a
+		  field declaration with initialization, and that variable 
+      is never changed in the code.
 		 •———————————————————————————————————————————————————————• */
 
 	public class ConvertToConstant
 	{
-		private double _PI = 3.14;
-		public double GetCircleArea(int radius)
+		private double AlmostPi = 3.14;
+		public double GetRoughCircleArea(int radius)
 		{
-			return _PI * radius * radius;
+      return AlmostPi * radius * radius;
 		}
+
+    public double ToRadians(double degrees)
+    {
+      double HalfSpin = 180.0;
+      return Math.PI * degrees / HalfSpin;
+    }
 	}
 }

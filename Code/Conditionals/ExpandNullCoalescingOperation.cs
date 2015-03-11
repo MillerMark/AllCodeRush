@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Conditionals
 {
@@ -11,13 +8,10 @@ namespace AllCodeRush.Code.Conditionals
       Use Case: Lets you convert a Null Coalescing Operation into an 
       equivalent Ternary Expression.
          
-      Available: When the edit cursor, or caret is on a statement 
-      that uses the ?? operator.
+      Availability: When the caret is at the start of a statement that 
+      uses the ?? operator.
         
       Related Refactorings: Compress To Null Coalescing Operation
-           
-      For more information on formatting code, see the "Code 
-      Formatting" video.
      •—————————————————————————————————————————————————————————————• */
   public class ExpandNullCoalescingOperation
   {

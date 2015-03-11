@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
-
+using System.Diagnostics.Contracts;
 namespace AllCodeRush.Code.DeclarationInitialization
 {
 	/* •———————————————————————————————————————————————————————•
@@ -17,35 +17,9 @@ namespace AllCodeRush.Code.DeclarationInitialization
 
 	public class AddContract
 	{
-		public void Caller1(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-		public void Caller2(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-		public void Caller3(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-		public void Caller4(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-		public void Caller5(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-		public void Caller6(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-		public void Caller7(DataTable conn, string UnsafeSQL)
-		{
-
-		}
-
-
+    public void Caller1(DataTable conn, string unsafeSQL)
+    {
+      
+    }
 	}
 }

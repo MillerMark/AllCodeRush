@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Conditionals
 {
@@ -22,14 +19,12 @@ namespace AllCodeRush.Code.Conditionals
 
   public class InitializeConditionally
   {
-    private string GetAgeDescription(int Age)
+    public string GetAgeDescription(int age)
     {
-      string Description = "Young";
-      if (Age > 70)
-      {
-        Description = "Young at Heart";
-      }
-      return Description;
+      string description = "Young";
+      if (age > 70)
+        description = "Young at Heart";
+      return description;
     }
   }
 }
