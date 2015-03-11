@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Conditionals
 {
@@ -17,8 +14,7 @@ namespace AllCodeRush.Code.Conditionals
        - The same variable should be one of two alternatives in 
          the right-hand side.
         
-      Related Refactorings: Expand Null Coalescing Ternary 
-                            Condition.
+      Related Refactorings: Expand Null Coalescing Operation.
            
       For more information on formatting code, see the "Code 
       Formatting" video.
@@ -26,10 +22,10 @@ namespace AllCodeRush.Code.Conditionals
 
   public class CompressToNullCoalescingOperation
   {
-    private string _Value;
+    private string _value;
     public string GetValue()
     {
-      return _Value == null ? "Default" : _Value;
+      return _value == null ? "Default" : _value;
     }
   }
 }
