@@ -22,9 +22,14 @@ namespace AllCodeRush.Code.Conditionals
 
   public class ExpandTernaryExpression
   {
-    public static string isPositive(int input)
+    public static string GetZeroStr(int input)
     {
-      return input >= 0 ? "positive" : "negative";
+      return input == 0 ? "zero" : "non-zero";
+    }
+
+    public static string GetSignStr(int input)
+    {
+      return input == 0 ? "zero" : input > 0 ? "positive" : "negative";
     }
   }
 }
