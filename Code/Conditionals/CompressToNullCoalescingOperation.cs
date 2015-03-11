@@ -23,9 +23,14 @@ namespace AllCodeRush.Code.Conditionals
   public class CompressToNullCoalescingOperation
   {
     private string _value;
-    public string GetValue()
+    public string GetValue(string defaultValue)
     {
-      return _value == null ? "Default" : _value;
+      return _value == null ? defaultValue : _value;
+    }
+
+    public string GetOtherValue(string defaultValue)
+    {
+      return _value != null ? _value : defaultValue;
     }
   }
 }
