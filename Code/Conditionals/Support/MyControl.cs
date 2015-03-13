@@ -19,7 +19,8 @@ namespace AllCodeRush.Code.Conditionals
     public MyControl Parent { get; set; }
     public System.Drawing.Rectangle ClientRectangle { get; set; }
     public string Name { get; set; }
-    public string Hint { get; set; }
+    public string Text { get; set; }
+    public object Size { get; set; }
 
     public void Clear()
     {
