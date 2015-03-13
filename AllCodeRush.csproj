@@ -67,6 +67,7 @@
     <Compile Include="Code\Conditionals\CaseToConditional.cs" />
     <Compile Include="Code\Conditionals\CombineConditionalsNested.cs" />
     <Compile Include="Code\Conditionals\CombineConditionalsParallel.cs" />
+    <Compile Include="Code\Conditionals\ConditionalTemplates.cs" />
     <Compile Include="Code\Conditionals\ConditionalToCase.cs" />
     <Compile Include="Code\Conditionals\ReverseConditional.cs" />
     <Compile Include="Code\Conditionals\SplitConditional.cs" />
