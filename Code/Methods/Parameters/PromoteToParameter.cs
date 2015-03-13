@@ -20,6 +20,12 @@ namespace AllCodeRush.Code.Methods.Parameters
 
 	public class PromoteToParameter
 	{
+		public void Log(string Message)
+		{
+			Console.WriteLine("Error" + Message);
+		}
+
+		#region Support
 		public void main()
 		{
 			Log("Starting Application");
@@ -33,10 +39,6 @@ namespace AllCodeRush.Code.Methods.Parameters
 			}
 			Log("Ending Application");
 		}
-
-		public void Log(string Message)
-		{
-			Console.WriteLine("Error" + Message);
-		}
+		#endregion
 	}
 }

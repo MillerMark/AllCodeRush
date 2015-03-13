@@ -26,7 +26,7 @@ namespace AllCodeRush.Code.Methods.Parameters
 	{
 		private void DisplayNames()
 		{
-			Person p1 = new Person() { Name = "Rory", Age = 37, Tel = "12345" };
+			Person p1 = new Person() { Name = "Adam", Age = 37, Tel = "12345" };
 			Person p2 = new Person() { Name = "Bob", Age = 22, Tel = "54321" };
 			DisplayName(p1);
 			DisplayName(p2);

@@ -20,6 +20,18 @@ namespace AllCodeRush.Code.Methods.Parameters
 
 	public class PromoteToParameterOptional
 	{
+		public void Log(string Message)
+		{
+
+			//TODO: Why is this refactoring not availble here?
+			Console.WriteLine("Error" + Message);
+
+			// But works fine here.
+			string LogType = "Error";
+			Console.WriteLine(LogType + Message);
+		}
+
+		#region Support
 		public void main()
 		{
 			Log("Starting Application");
@@ -33,18 +45,6 @@ namespace AllCodeRush.Code.Methods.Parameters
 			}
 			Log("Ending Application");
 		}
-
-		public void Log(string Message)
-		{
-
-			//TODO: Why is this refactoring not availble here?
-			Console.WriteLine("Error" + Message);
-
-			// But works fine here.
-			string LogType = "Error";
-			Console.WriteLine(LogType + Message);
-
-
-		}
+		#endregion
 	}
 }

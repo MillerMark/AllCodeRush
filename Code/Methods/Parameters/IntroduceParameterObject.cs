@@ -24,7 +24,7 @@ namespace AllCodeRush.Code.Methods.Parameters
 	{
 		public void Foo()
 		{
-			ProcessPerson(new Person("Rory", "Becker", 37, "12345"));
+			ProcessPerson(new Person("John", "Adams", 37, "12345"));
 		}
 		private struct Person
 		{

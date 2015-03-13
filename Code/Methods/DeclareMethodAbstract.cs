@@ -16,11 +16,12 @@ namespace AllCodeRush.Code.Methods
 			See also: Declare Method
 		 •———————————————————————————————————————————————————————• */
 
-	public abstract class DeclareMethodAbstract
+	public abstract class Prism
 	{
-		public void ExistingMethod()
+		private int _height;
+		public void CalculateVolume()
 		{
-			OtherMethod(1);
+			return CalculateVolumeArea() * _height;
 		}
 	}
 }

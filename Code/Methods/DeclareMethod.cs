@@ -16,11 +16,21 @@ namespace AllCodeRush.Code.Methods
 			See also: Declare Method (Abstract)
 		 •———————————————————————————————————————————————————————• */
 
-	public class DeclareMethod
+	public class Account
 	{
-		public void ExistingMethod()
+		private int _value;
+		public Account(int Value)
 		{
-			OtherMethod(1);
+			_value = Value;
+		}
+		private void TransferMoney(Account DestAccount, int Value)
+		{
+			this.Withdraw(Value);
+			DestAccount.Deposit(Value);
+		}
+		public void Withdraw(int value)
+		{
+			_value -= value;
 		}
 	}
 }
