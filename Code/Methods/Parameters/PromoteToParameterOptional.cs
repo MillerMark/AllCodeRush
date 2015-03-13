@@ -23,7 +23,7 @@ namespace AllCodeRush.Code.Methods.Parameters
 		public void Log(string Message)
 		{
 
-			//TODO: Why is this refactoring not availble here?
+			//TODO: Why is this refactoring not available here?
 			Console.WriteLine("Error" + Message);
 
 			// But works fine here.
