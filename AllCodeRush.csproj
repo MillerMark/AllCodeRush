@@ -113,6 +113,7 @@
     <Compile Include="Code\Expressions\ReplaceTempWithQuery.cs" />
     <Compile Include="Code\Expressions\ReplaceWithConstant.cs" />
     <Compile Include="Code\Expressions\ReplaceWithLocal.cs" />
+    <Compile Include="Code\Expressions\UseEqualityOperator.cs" />
     <Compile Include="Code\Methods\DeclareMethod.cs" />
     <Compile Include="Code\Methods\DeclareMethodAbstract.cs" />
     <Compile Include="Code\Methods\Parameters\DecomposeParameter.cs" />
@@ -168,6 +169,7 @@
     <Compile Include="Navigate\Type\JumpToImplementations.cs" />
     <Compile Include="Navigate\Type\JumpToImplementers.cs" />
     <Compile Include="Navigate\Type\JumpToParentType.cs" />
+    <Compile Include="Options\CodeFormatting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
