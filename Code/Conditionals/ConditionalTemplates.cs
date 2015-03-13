@@ -4,7 +4,7 @@ namespace AllCodeRush.Code.Conditionals
 {
   class ConditionalTemplates
   {
-    private bool TemplatesForWorkingWithConditions(bool testValue1, bool testValue2, bool testValue3)
+    public bool TemplatesForWorkingWithConditionals(bool testValue1, bool testValue2, bool testValue3)
     {
       // Basics...
       // b == {}
