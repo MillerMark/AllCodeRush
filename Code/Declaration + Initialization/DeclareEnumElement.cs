@@ -23,7 +23,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 		{
 			Platinum,
 			Gold,
-			Silver,
+			Silver
 		}
 		public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
 		{
