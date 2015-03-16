@@ -1,9 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
-using System.Diagnostics.Contracts;
+
 namespace AllCodeRush.Code.DeclarationInitialization
 {
 	/* •———————————————————————————————————————————————————————•
@@ -17,7 +14,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 
 	public class AddContract
 	{
-    public void Caller1(DataTable conn, string unsafeSQL)
+    public void Connect(DataTable table, string unsafeSQL)
     {
       
     }
