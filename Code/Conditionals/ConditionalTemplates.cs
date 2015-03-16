@@ -9,15 +9,20 @@ namespace AllCodeRush.Code.Conditionals
     {
       // Basics...
       // b == {}
+      // if == if ()
       // l == else
 
-      // if, ifb, ifn, ifa
 
-      // else blocks: l, lf (else if), lb, blb, 
+      //ifb, ifn, ifa
 
-      // and & or templates.
+      // else blocks: lb, blb
+
+      // lf == else if ()
+
+      // and == &&
+      // or == ||
+
       // Paren embedding.
-
       if (testValue1 || testValue2 && testValue3)
         testValue1 = false;
 
@@ -25,9 +30,14 @@ namespace AllCodeRush.Code.Conditionals
     }
 
     MyControl control;
-    public void CreateOnDemand()
+    public MyControl Control
     {
-      // Copy the "control" field above to the clipboard and then expand the "cod" template.
+      get
+      {
+        // Copy the "control" field to the clipboard and then expand the "cod" template.
+
+        return control;
+      }
     }
 
 
@@ -50,7 +60,7 @@ namespace AllCodeRush.Code.Conditionals
     {
       // Out of scope, slightly...
       // r == Returning values
-      
+
       // else return: lr + primitive shortcut 
       if (test)
       {
@@ -60,30 +70,40 @@ namespace AllCodeRush.Code.Conditionals
 
     public void IfNullReturn(MyControl myControl)
     {
-      if (myControl == null)
-        return;
+      // inr == if ({Paste} == null) then return;
 
-      // inr, inx, inr + primitive shortcut
+      // inr {+ primitive shortcut} == if ({Paste} == null) then return {primitive value};
 
-      // n + primitive shortcut
-      // copy name to the clipboard, and use in the uncommented code below.
-      string name;
-      //if ()
-      //if (name)
+
     }
-    
+
+
     public void SettingAndTestingValues(bool test, int counter, string name)
     {
       // Out of scope, ever so slightly...
-      // s == Setting values (or testing to see if a value is Set to something) 
-      // n == tests to see if a value is Not set to something 
+      // s ... Setting values (or testing to see if a value is Set to something) 
+      // n ... tests to see if a value is Not set to something
 
       // s + primitive shortcut (both on an empty line and inside an expression)
       // n + primitive shortcut (both inside empty parens and to the right of an identifier)
-      if (test)
-      {
-      	
-      }
+
+      /* •—————————————————————————————————————————————————————————————————————————————————————————•
+           Template:        s + primitive shortcut            :         n + primitive shortcut    
+                                                              :
+                                                              :       
+           Expansion:       {Paste} == {primitive value}      :      {Paste} != {primitive value} 
+                                                              :
+                                                              :
+           Try it:          on an empty line &                :      inside empty parens & 
+                            inside an expression              :      to the right of an identifier
+         •—————————————————————————————————————————————————————————————————————————————————————————• */
+
+      string name = "Hello World";    // copy name to the clipboard, and use in the uncommented code below.
+      //if ()
+      //  if (name)
+      //  {
+      //  	
+      //  }
 
       // sne = String.IsNullOrEmpty()
     }
@@ -95,7 +115,7 @@ namespace AllCodeRush.Code.Conditionals
 
       // nn, sn (we've already seen these)
     }
-    
+
 
     /* •————————————————————•
         Boolean Properties:      
@@ -112,7 +132,7 @@ namespace AllCodeRush.Code.Conditionals
       // Copy myControl to the clipboard...
       if (myControl.Checked)
       {
-        
+
       }
     }
 
