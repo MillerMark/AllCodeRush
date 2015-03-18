@@ -55,6 +55,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Code\Conditionals\Support\MyControl.cs" />
+    <Compile Include="Code\Declaration + Initialization\MakeExplicitAndNameAnonymousType.cs" />
     <Compile Include="Code\Declaration + Initialization\Support\ZoningArea.cs" />
     <Compile Include="XIssues\Issues.cs" />
     <Page Include="MainWindow.xaml">

@@ -17,11 +17,11 @@ namespace AllCodeRush.Code.DeclarationInitialization
       See also: Make Explicit (and Name Anonymous Type)
      •——————————————————————————————————————————————————————————• */
 
-  public class NameAnonymousType
+  public class MakeExplicitAndNameAnonymousType
 	{
 		private void Test()
 		{
-			var person = new { id = 1, name = "Nick Johnson" };
+			var passengerVehicle = new { wheelCount = 4, model = "SuperBolt", price = 45000m };
 		}
 	}
 }
