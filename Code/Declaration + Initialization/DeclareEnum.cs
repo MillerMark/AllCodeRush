@@ -32,7 +32,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 
     private void IsRed(Suit suit)
     {
-      return suit == Suit.Diamonds || suit == Suit.Hearts;
+      return suit == Suit.Diamonds || suit == Suit.Diamonds;
     }
 	}
 }

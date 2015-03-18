@@ -19,7 +19,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	{
     public double CalculateCircleArea(double radius)
 		{
-			return radius * radius * pi;
+      return radius * radius * pi;
 		}
 
     public void GetFiles(string path)
