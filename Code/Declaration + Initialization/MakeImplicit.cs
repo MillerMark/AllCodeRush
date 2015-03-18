@@ -3,19 +3,19 @@ using System.IO;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-	/* •———————————————————————————————————————————————————————•
-			Feature: Make Implicit
+  /* •———————————————————————————————————————————————————————•
+      Feature: Make Implicit
         
-			Use Case: Lets you convert an explicitly-typed local 
-			variable to a variable with an implicit type.
+      Use Case: Converts an explicitly-typed local variable 
+      to a variable with an implicit type.
          
-			Available: When the caret is on an explicit variable 
-			declaration.
+      Available: When the caret is on an explicit variable 
+      declaration.
         
-			See also: Make Explicit
-		 •———————————————————————————————————————————————————————• */
+      See also: Make Explicit
+     •———————————————————————————————————————————————————————• */
 
-	public class MakeImplicit
+  public class MakeImplicit
 	{
     public void SaveWithRestrictedAccess(string fileName, byte[] decryptedXML)
     {

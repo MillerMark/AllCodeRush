@@ -5,7 +5,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	/* •———————————————————————————————————————————————————————•
 		  Feature: Convert To Constant
         
-		  Use Case: Lets you convert a variable to a constant.
+		  Use Case: Converts a variable to a constant.
          
 		  Available: When the caret is on a local variable or a
 		  field declaration with initialization, and that variable 

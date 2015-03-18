@@ -5,10 +5,10 @@ namespace AllCodeRush.Code.DeclarationInitialization
   /* •———————————————————————————————————————————————————————————•
       Feature: Decompose Initializer
         
-      Use Case: Lets you convert an object initializer to the 
-      object constructor call, followed by lines that initialize 
-      object properties individually. Can turn a very long line 
-      of code into several shorter lines of code.
+      Use Case: Converts an object initializer to the object 
+      constructor call, followed by lines that initialize object 
+      properties individually. Can turn a single long line of 
+      code into several shorter lines of code.
          
       Available: When the cursor is placed on the name of the 
       initialized object. 
