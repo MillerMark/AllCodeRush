@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
@@ -19,11 +17,22 @@ namespace AllCodeRush.Code.DeclarationInitialization
 
 	public class MakeImplicit
 	{
-		public string GetDescription()
-		{
-			string Description = "A string";
+    public void SaveWithRestrictedAccess(string fileName, byte[] decryptedXML)
+    {
+      FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.ReadWrite, FileShare.None);
+      fileStream.Write(decryptedXML, 0, decryptedXML.Length);
+      fileStream.Close();
+    
+      // Consider using implicit variable declaration on the following line:
+      System.Security.AccessControl.FileSecurity fileSecurity = new System.Security.AccessControl.FileSecurity();
 
-			return Description;
-		}
-	}
+      AllowFullAccess(fileSecurity);
+      File.SetAccessControl(fileName, fileSecurity);
+    }
+  
+    private static void AllowFullAccess(System.Security.AccessControl.FileSecurity fileSecurity)
+    {
+      fileSecurity.AddAccessRule(new System.Security.AccessControl.FileSystemAccessRule("Everyone", System.Security.AccessControl.FileSystemRights.FullControl, System.Security.AccessControl.AccessControlType.Allow));
+    }
+  }
 }

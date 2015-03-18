@@ -1,27 +1,30 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Drawing;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-	/* •———————————————————————————————————————————————————————•
-		  Feature: Declare Local
+  /* •———————————————————————————————————————————————————————•
+      Feature: Declare Local
         
-		  Use Case: Lets you generate a declaration for an 
-		  undeclared local variable.
+      Use Case: Consume-first declares undeclared local 
+      variables.
          
-		  Available: When the caret is on an undeclared variable 
-		  reference.
-		 •———————————————————————————————————————————————————————• */
+      Available: When the caret is on an undeclared variable 
+      reference or expression.
+   
+      Related Features: Remove Type Qualifier
+     •———————————————————————————————————————————————————————• */
 
-	public class DeclareLocal
+  public class DeclareLocal
 	{
-		public int CalculateCircleArea(int radius)
+    public double CalculateCircleArea(double radius)
 		{
 			return radius * radius * pi;
 		}
+
+    public void GetFiles(string path)
+    {
+      // Use Intellisense to get you this: "System.IO.Directory.EnumerateFiles(path)"
+    }
 	}
 }

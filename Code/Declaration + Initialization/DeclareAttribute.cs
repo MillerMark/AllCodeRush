@@ -5,9 +5,10 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	/* •———————————————————————————————————————————————————————•
 		  Feature: Declare Attribute
         
-		  Use Case: Lets you create .net Attribute classes by example.
+		  Use Case: Consume-first declaration of .NET Attribute 
+      classes.
          
-		  Available: When the caret resides on a reference to an 
+		  Available: When the caret is in a reference to an 
 		  undeclared attribute.
 		 •———————————————————————————————————————————————————————• */
 

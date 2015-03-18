@@ -37,9 +37,9 @@ namespace AllCodeRush.Code.Conditionals
         return false;
     }
 
-    public static int AnyTrue(bool a, bool b, bool c)
+    public static int AllTrue(bool a, bool b, bool c)
     {
-      if (a || b || c)
+      if (a && b && c)
         return 1;
       else
         return 0;

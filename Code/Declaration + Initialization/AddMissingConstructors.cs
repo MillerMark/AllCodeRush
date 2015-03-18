@@ -2,21 +2,22 @@ using System;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-	/* •———————————————————————————————————————————————————————•
-		  Feature: Add Missing Constructors
+  /* •—————————————————————————————————————————————————————————————•
+      Feature: Add Missing Constructors
         
-		  Use Case: Adds base class constructors to a descendant class
+      Use Case: Adds base class constructors to a descendant class
          
-		  Available: When the caret is on a class declaration within 
-		  its name, provided that the base class contains at least 
-		  one constructor that is not implemented in the current class. 
-		 •———————————————————————————————————————————————————————• */
+      Available: When the caret is on a class declaration within 
+      its name, provided that the base class contains at least 
+      one constructor that is not implemented in the current class. 
+     •—————————————————————————————————————————————————————————————• */
 
-	public class AddMissingConstructors : AspectRatio
-	{
-	}
+  public class AddMissingConstructors : AspectRatio
+  {
 
-	public class AspectRatio
+  }
+
+  public class AspectRatio
 	{
     private readonly int height;
     private readonly int width;

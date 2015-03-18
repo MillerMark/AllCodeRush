@@ -5,28 +5,28 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	/* •———————————————————————————————————————————————————————•
 		  Feature: Declare Enum
         
-		  Use Case: Lets you create a new enum from example code.
+		  Use Case: Consume-first declaration of enums.
          
-		  Available: When the caret is positioned on a reference to 
+		  Available: When the caret is on a reference to 
 		  a non-existent enumeration type.
 		 •———————————————————————————————————————————————————————• */
 
 	public class DeclareEnum
 	{
-		public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
+		public double CalculateDiscount(DiscountLevel discountLevel)
 		{
 			switch (discountLevel)
 			{
-				case DiscountLevelEnum.Platinum:
+				case DiscountLevel.Platinum:
 					return 15.0;
-				case DiscountLevelEnum.Gold:
+				case DiscountLevel.Gold:
 					return 10.0;
-				case DiscountLevelEnum.Silver:
+				case DiscountLevel.Silver:
 					return 5.0;
-				case DiscountLevelEnum.Bronze:
+				case DiscountLevel.Bronze:
 					return 2.5;
 				default:
-					throw new Exception("This cannot happen");
+					throw new Exception("Unanticipated discount level");
 			}
 		}
 	}

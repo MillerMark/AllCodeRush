@@ -8,11 +8,11 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	/* •———————————————————————————————————————————————————————•
 			Feature: Use Named Arguments
         
-			Use Case: Lets you convert a method call with positional 
+			Use Case: Converts a method call with positional 
 			arguments into a named-argument call.
          
-			Available: When the caret is on a method name within its 
-			call, provided that the method has parameters.
+			Available: When the caret is on a method call with 
+      parameters.
 		 •———————————————————————————————————————————————————————• */
 
 	public class UseNamedArguments

@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
 	/* •———————————————————————————————————————————————————————•
 			Feature: Make Explicit
         
-			Use Case: Lets you convert an implicitly-typed local 
-			variable to a variable with an explicit type.
+			Use Case: Converts an implicitly-typed local variable 
+      to a variable declared with an explicit type.
          
 			Available: When the caret is on an implicit variable 
 			declaration.
@@ -19,11 +17,11 @@ namespace AllCodeRush.Code.DeclarationInitialization
 
 	public class MakeExplicit
 	{
-		public string GetDescription()
-		{
-			var Description = "A string";
+    public string GetParentFolder(string fileName)
+    {
+      var parent = Directory.GetParent(Path.GetFullPath(fileName));
 
-			return Description;
-		}
+      return parent.FullName;
+    }
 	}
 }

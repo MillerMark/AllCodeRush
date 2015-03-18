@@ -1,45 +1,38 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Drawing;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
 	/* •———————————————————————————————————————————————————————•
 		  Feature: Declare Enum Element
         
-		  Use Case: Lets you add an element to a preexisting enum 
-		  declaration by example.
+		  Use Case: Consume-first declaration of enum elements.
          
 		  Available: When the caret is on a reference to an 
-		  undeclared enumeration element.
+		  undeclared enum element.
 		 •———————————————————————————————————————————————————————• */
 
 	public class DeclareEnumElement
 	{
-		public enum DiscountLevelEnum
+		public enum DifficultyLevel
 		{
-			Platinum,
-			Gold,
-			Silver
+      Beginner,
+			Intermediate
 		}
-		public double CalculateDiscountPCent(DiscountLevelEnum discountLevel)
+
+    public bool CanTakeCourse(DifficultyLevel courseLevel, DifficultyLevel customerLevel)
 		{
-			switch (discountLevel)
-			{
-				case DiscountLevelEnum.Platinum:
-					return 15.0;
-				case DiscountLevelEnum.Gold:
-					return 10.0;
-				case DiscountLevelEnum.Silver:
-					return 5.0;
-				case DiscountLevelEnum.Bronze:
-					return 2.5;
-				default:
-					throw new Exception("This cannot happen");
-			}
+      if (customerLevel == DifficultyLevel.Beginner)
+        return courseLevel == DifficultyLevel.Beginner;
+
+
+      if (customerLevel == DifficultyLevel.Intermediate)
+        return courseLevel == DifficultyLevel.Beginner || 
+               courseLevel == DifficultyLevel.Intermediate;
+
+      if (customerLevel == DifficultyLevel.Advanced)
+        return true;
+
+      return false;
 		}
 	}
 

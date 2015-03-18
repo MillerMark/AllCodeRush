@@ -1,35 +1,31 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-	/* •———————————————————————————————————————————————————————•
-		  Feature: Declare Constructor
+  /* •——————————————————————————————————————————————————————————•
+      Feature: Declare Constructor
         
-		  Use Case: Lets you generate a class Constructor by example.
+      Use Case: Consume-first declaration of class constructors.
          
-		  Available: When the caret is on a reference to an 
-		  undeclared constructor.
-		 •———————————————————————————————————————————————————————• */
+      Available: When the caret is on a reference to an 
+      undeclared constructor.
+   
+      Related Features: Declare Field with Initializer,
+      Declare Property with Initializer
+     •——————————————————————————————————————————————————————————• */
 
-	public class DeclareConstructor
+  public class DeclareConstructor
 	{
-		public SimplePersonClass CreateRory()
+		public SimplePersonClass GetSamplePerson()
 		{
 			var Name = "Bob";
 			var Age = 37;
 			SimplePersonClass person = new SimplePersonClass(Name, Age);
 			return person;
 		}
-
 	}
-	#region Misc
-	public class SimplePersonClass
-	{
 
-	}
-	#endregion
+  public class SimplePersonClass
+  {
+  }
 }

@@ -1,27 +1,25 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Drawing;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-	/* •———————————————————————————————————————————————————————•
-			Feature: Declare Local (Implicit)
+  /* •———————————————————————————————————————————————————————•
+      Feature: Declare Local (implicit)
+        
+      Use Case: Consume-first declares undeclared local 
+      variables.
          
-			Use Case: Lets you generate an implicit declaration for an 
-			undeclared local variable.
-         
-			Available: When the caret is on an undeclared variable 
-			reference.
-		 •———————————————————————————————————————————————————————• */
+      Available: When the caret is on an undeclared variable 
+      reference or expression.
+   
+      Related Features: Remove Type Qualifier
+     •———————————————————————————————————————————————————————• */
 
-	public class DeclareLocalImplicit
-	{
-		public int CalculateCircleArea(int radius)
-		{
-			return radius * radius * pi;
-		}
-	}
+  public class DeclareLocalImplicit
+  {
+    public void GetFolders(string path)
+    {
+      // Use Intellisense to get you this: "System.IO.Directory.GetDirectories(path)"
+    }
+  }
+
 }

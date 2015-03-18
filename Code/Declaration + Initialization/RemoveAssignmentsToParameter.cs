@@ -1,26 +1,29 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
-	/* •———————————————————————————————————————————————————————•
-			Feature: Remove Assignments to Parameter
+  /* •———————————————————————————————————————————————————————•
+      Feature: Remove Assignments to Parameter
         
-			Use Case: Prevents input parameters being modified.
+      Use Case: Prevents input parameters from being modified, 
+      which can lead to code that is easier to read and 
+      easier to refactor.
         
-			Available: When the caret is on a parameter declaration 
-			or reference provided that the parameter has an assignment 
-			within the method's body.
-		 •———————————————————————————————————————————————————————• */
+      Available: When the caret is on a parameter declaration 
+      or reference provided that the parameter has an assignment 
+      within the method's body.
+     •———————————————————————————————————————————————————————• */
 
-	public class RemoveAssignmentsToParameter
+  public class RemoveAssignmentsToParameter
 	{
-		public int Add(int left, int right)
+    public string GetFullName(string first, string last)
 		{
-			left = left + right;
-			return left;
+      if (!String.IsNullOrEmpty(first) && !String.IsNullOrEmpty(last))
+			  first = first + " " + last;
+      else if (String.IsNullOrEmpty(first))
+        first = last;
+
+			return first;
 		}
 	}
 }

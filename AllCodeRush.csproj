@@ -85,7 +85,6 @@
     <Compile Include="Code\Conditionals\InitializeConditionally.cs" />
     <Compile Include="Code\Declaration + Initialization\AddContract.cs" />
     <Compile Include="Code\Declaration + Initialization\AddMissingConstructors.cs" />
-    <Compile Include="Code\Declaration + Initialization\CustomAttribute.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareAttribute.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareConstructor.cs" />
     <Compile Include="Code\Declaration + Initialization\DeclareEnum.cs" />
@@ -100,8 +99,8 @@
     <Compile Include="Code\Declaration + Initialization\NameAnonymousType.cs" />
     <Compile Include="Code\Declaration + Initialization\RemoveAssignmentsToParameter.cs" />
     <Compile Include="Code\Declaration + Initialization\UseNamedArguments.cs" />
-    <Compile Include="Code\Declaration + Initialization\Utility\Building.cs" />
-    <Compile Include="Code\Declaration + Initialization\Utility\Person.cs" />
+    <Compile Include="Code\Declaration + Initialization\Support\Building.cs" />
+    <Compile Include="Code\Declaration + Initialization\Support\Person.cs" />
     <Compile Include="Code\Expressions\CreateCaseBlocksFromEnum.cs" />
     <Compile Include="Code\Expressions\CreateOverload.cs" />
     <Compile Include="Code\Expressions\InlineConstant.cs" />
