@@ -100,7 +100,7 @@
     <Compile Include="Code\Declaration + Initialization\RemoveAssignmentsToParameter.cs" />
     <Compile Include="Code\Declaration + Initialization\UseNamedArguments.cs" />
     <Compile Include="Code\Declaration + Initialization\Support\Building.cs" />
-    <Compile Include="Code\Declaration + Initialization\Support\Person.cs" />
+    <Compile Include="Code\Declaration + Initialization\Support\Customer.cs" />
     <Compile Include="Code\Expressions\CreateCaseBlocksFromEnum.cs" />
     <Compile Include="Code\Expressions\CreateOverload.cs" />
     <Compile Include="Code\Expressions\InlineConstant.cs" />
