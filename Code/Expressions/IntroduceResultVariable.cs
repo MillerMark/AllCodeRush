@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Introduce Result Variable
         
-			Use Case: Lets you introduce a variable to accept a 
+			Use Case: Introduces a variable to accept a 
 			value, replacing early-exit return statements with 
 			assignments to the variable and consolidating multiple 
 			method exit points into a single one.

@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Replace With Local
         
-			Use Case: Lets you replace the selected expression with a 
+			Use Case: Replaces the selected expression with a 
 			reference to a local variable which was previously 
 			assigned this value.
          

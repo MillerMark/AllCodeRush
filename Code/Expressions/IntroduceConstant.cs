@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Introduce Constant
         
-			Use Case: Lets you declare a new constant initialized to 
+			Use Case: Declares a new constant initialized to 
 			the value of the string or number at the caret.
          
 			Available: When the caret is on a number or string literal.

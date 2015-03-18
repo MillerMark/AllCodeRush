@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Inline Constant
         
-			Use Case: Lets you replace a constant reference with its 
+			Use Case: Replaces a constant reference with its 
 			defined value, removing the constant declaration if there 
 			are no other references to it.
          

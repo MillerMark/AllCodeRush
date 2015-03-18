@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Replace Temp With Query
         
-			Use Case: Lets you replace all references to a local 
+			Use Case: Replaces all references to a local 
 			variable with a call to a property or method that returns 
 			the variable's initial value.
          

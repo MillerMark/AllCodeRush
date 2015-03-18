@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Replace With Constant
         
-			Use Case: Lets you replace an expression with a reference 
+			Use Case: Replaces an expression with a reference 
 			to a constant with the same value.
          
 			Available: When the caret is on a string or a number and 

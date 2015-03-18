@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Inline Temp
         
-			Use Case: Lets you replace all references to a local 
+			Use Case: Replaces all references to a local 
 			variable with its initial value.
          
 			Available: When the caret is on the declaration or 

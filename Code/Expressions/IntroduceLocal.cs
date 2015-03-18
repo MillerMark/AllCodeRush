@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Introduce Local
         
-			Use Case: Lets you create a new local variable 
+			Use Case: Creates a new local variable 
 			initialized with the selected expression.
          
 			Available: When an expression is selected.

@@ -7,7 +7,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 		  Feature: Use Equality Operator
           
-		  Use Case: Lets you convert an Equals method call to an 
+		  Use Case: Converts an Equals method call to an 
 	    expression with the equality operator.
            
 		  Available: When an expression with the Equals method 

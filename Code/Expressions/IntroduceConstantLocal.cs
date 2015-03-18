@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Introduce Constant (Local)
         
-			Use Case: Lets you declare a new *local* constant 
+			Use Case: Declares a new *local* constant 
 			initialized to the value of the string or number at the 
 			caret.
          

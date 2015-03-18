@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Inline Result
         
-			Use Case: Lets you replace final assignments to the 
+			Use Case: Replaces final assignments to the 
 			temporary variable with a statement that immediately 
 			returns the value.
          

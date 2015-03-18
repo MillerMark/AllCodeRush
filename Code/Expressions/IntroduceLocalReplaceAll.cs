@@ -9,7 +9,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Introduce Local (Replace All)
         
-			Use Case: Lets you create a new local variable 
+			Use Case: Creates a new local variable 
 			initialized with the selected expression. 
 			Note: This operation replaces other instances of the 
 			expression with same local.

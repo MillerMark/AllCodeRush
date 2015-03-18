@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 	/* •———————————————————————————————————————————————————————•
 			Feature: Inline Recent Assignment
         
-			Use Case: Lets you replace the identifier at the caret 
+			Use Case: Replaces the identifier at the caret 
 			with its most recent assignment.
          
 			Available: When the caret is on an variable or a property. 
