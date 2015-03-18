@@ -19,7 +19,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	{
 		public void Caller()
 		{
-			Person P = new Person("Tim", "Smith", 37);
+      Customer P = new Customer("Tim", "Smith", 37);
 		}
 	}
 }
