@@ -18,10 +18,12 @@ namespace AllCodeRush.Code.Expressions
 
 	public class UseEqualityOperator
 	{
-		private void TestEquality()
+    private string ConcatIfDifferent(string str1, string str2)
 		{
-			//TODO: Does Not appear to work.
-			bool result = 1.Equals(2);
+			if (str1.Equals(str2))
+        return str1;
+      else
+        return str1 + "," + str2;
 		}
 	}
 }
