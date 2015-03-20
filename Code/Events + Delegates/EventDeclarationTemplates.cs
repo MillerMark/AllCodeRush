@@ -11,20 +11,25 @@ namespace AllCodeRush.Code.EventsDelegates
        •———————————————————————————————————————————————————————• */
 
   // d
-  
+
   public class EventDeclarationTemplates
   {
+    //ev
     
-    //ev, evar, a, r, ar
+
+    // evar
     
-    
+
     // os, osea, eae, 
+
     
     // eh
     
+    
     // ehl
     
-    
+
     // ev., ev.?Type? etc
+    
   }
 }
