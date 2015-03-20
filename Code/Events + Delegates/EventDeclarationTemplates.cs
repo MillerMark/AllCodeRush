@@ -8,14 +8,21 @@ namespace AllCodeRush.Code.EventsDelegates
         Use Case: Makes it easier to create event-related 
         code.
        •———————————————————————————————————————————————————————• */
+
+  // d
   
   public class EventDeclarationTemplates
   {
-    //ev, evar, d, os, osea, a, add, ar, eh, ehl, isi, evx, etc
+    //ev, evar, a, r, ar
     
     
+    // os, osea, eae, 
     
-    public event EventHandler EventName;
+    // eh
     
+    // ehl
+    
+    
+    // ev., ev.?Type? etc
   }
 }
