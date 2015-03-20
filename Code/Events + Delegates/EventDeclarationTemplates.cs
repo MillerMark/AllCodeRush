@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+
 namespace AllCodeRush.Code.EventsDelegates
 {
   /* •———————————————————————————————————————————————————————•
@@ -13,6 +14,7 @@ namespace AllCodeRush.Code.EventsDelegates
   
   public class EventDeclarationTemplates
   {
+    
     //ev, evar, a, r, ar
     
     

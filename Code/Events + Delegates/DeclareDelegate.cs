@@ -10,34 +10,12 @@ namespace AllCodeRush.Code.EventsDelegates
          
       Available: When the caret is on an undeclared delegate.
         
-      See also: Compress to Lambda Expression, Expand Lambda 
-      Expression
+      See also: Declare EventArgs Descendant, Create Event 
+      Trigger
      •———————————————————————————————————————————————————————• */
 
   public class DeclareDelegate
   {
-    List<Employee> employees = new List<Employee> {
-               new Employee { ID = 1, Role = 1, LastName = "Smith", FirstName = "Sally"},
-               new Employee { ID = 2, Role = 2, LastName = "Jones", FirstName = "John"}
-            };
-
-    private Employee FindEmployee(int idToMatch)
-    {
-      EmployeeFilter filter = delegate(Employee employee)
-                              {
-                                return employee.ID == idToMatch;
-                              };
-
-      // Find employee...
-      Employee foundEmployee = null;
-      foreach (Employee employee in employees)
-        if (filter(employee))
-          foundEmployee = employee;
-
-      if (foundEmployee != null)
-        return foundEmployee;
-
-      return null;
-    }
+    public event HoloLensEventHandler HeadMoved;
   }
 }
