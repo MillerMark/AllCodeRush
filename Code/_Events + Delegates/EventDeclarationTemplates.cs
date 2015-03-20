@@ -14,11 +14,11 @@ namespace AllCodeRush.Code.EventsDelegates
 
   public class EventDeclarationTemplates
   {
-    //ev
-    
+    // ev
+
 
     // evar
-    
+
 
     // os, osea, eae, 
 
