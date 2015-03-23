@@ -21,10 +21,10 @@ namespace AllCodeRush.Options.Editor
 
 		// Settings affect Refactorings
 		// ie Extract Method, Extract Property
-		bool a, b, c, d, e, f;
+		bool a, b, c, d;
 		private bool ComplexMethod()
 		{
-			if (a && b && c && d && e && f)
+			if (a && b && c && d)
 				return true;
 			else
 				return false;
