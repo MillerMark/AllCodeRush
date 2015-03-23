@@ -19,9 +19,15 @@ namespace AllCodeRush.Code.Methods
 
 	public class MakeMemberNonStatic
 	{
-		public static double GetCircleArea(int radius)
+		public static decimal GetCartTotal(Cart cart)
 		{
-			return Math.PI * radius * radius;
+			decimal total = 0;
+			foreach (CartEntry entry in cart.Items)
+			{
+				total += entry.Value * entry.Quantity;
+			}
+			return total;
 		}
+
 	}
 }

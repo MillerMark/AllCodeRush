@@ -26,18 +26,18 @@ namespace AllCodeRush.Code.Methods.Parameters
 	{
 		private void DisplayNames()
 		{
-			Person p1 = new Person() { Name = "Adam", Age = 37, Tel = "12345" };
-			Person p2 = new Person() { Name = "Bob", Age = 22, Tel = "54321" };
+			Customer p1 = new Customer() { Name = "Adam", Age = 37, Tel = "12345" };
+			Customer p2 = new Customer() { Name = "Bob", Age = 22, Tel = "54321" };
 			DisplayName(p1);
 			DisplayName(p2);
 		}
 
-		private void DisplayName(AllCodeRush.Code.Methods.Parameters.Person person)
+		private void DisplayName(Customer customer)
 		{
-			Console.WriteLine("The name of this person is {0}", person.Name);
+			Console.WriteLine("The name of this person is {0}", customer.Name);
 		}
 	}
-	public class Person
+	public class Customer
 	{
 		public string Name { get; set; }
 		public int Age { get; set; }

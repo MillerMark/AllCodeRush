@@ -18,16 +18,26 @@ namespace AllCodeRush.Code.Expressions
 
 	public class InlineRecentAssignment
 	{
-		// TODO: Change this into a proper use case.
-		public void MethodName()
+		private void TestMethod()
 		{
-			// Broken if executed on this line.
-			int s = 1;
-			// Broken if executed on this line.
-			string String1 = "Value - " + s;
-			s = 42;
-			// Works here though.
-			string String2 = "Value - " + s;
+			string Command = ReadCommand();
+			
+			Execute(Command);
+			
+			Command = ReadCommand();
+			
+			Execute(Command);
 		}
+
+		#region Support
+		private string ReadCommand()
+		{
+			return string.Empty;
+		}
+		private void Execute(string Command)
+		{
+			// Execute command here
+		}
+		#endregion
 	}
 }

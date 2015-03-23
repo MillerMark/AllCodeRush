@@ -55,11 +55,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Code\Conditionals\Support\MyControl.cs" />
+    <Compile Include="Code\Methods\Support\CartEntry.cs" />
+    <Compile Include="Code\Methods\Support\Cart.cs" />
+    <Compile Include="Options\Editor\CodeFormatting.cs" />
     <Compile Include="XIssues\Disposable.cs" />
     <Compile Include="XIssues\IndentNestedUsingStatements.cs" />
     <Compile Include="XIssues\InlineConstant.cs" />
     <Compile Include="XIssues\InlineRecentAssignment.cs" />
-    <Compile Include="XIssues\Issues.cs" />
+    <Compile Include="XIssues\IntroduceLocalReplaceAll.cs" />
     <Compile Include="XIssues\PromoteToParameterOptional.cs" />
     <Compile Include="XIssues\UseEqualityOperator.cs" />
     <Page Include="MainWindow.xaml">
@@ -177,7 +180,7 @@
     <Compile Include="Navigate\Type\JumpToImplementations.cs" />
     <Compile Include="Navigate\Type\JumpToImplementers.cs" />
     <Compile Include="Navigate\Type\JumpToParentType.cs" />
-    <Compile Include="Options\CodeFormatting.cs" />
+    <Compile Include="Options\Editor\Identifiers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

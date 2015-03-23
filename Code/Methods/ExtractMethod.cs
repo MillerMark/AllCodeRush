@@ -21,9 +21,9 @@ namespace AllCodeRush.Code.Methods
 
 	public class ExtractMethod
 	{
-		public double GetVolumeOfCylinder(int radius, int height)
+		public double GetWaterTankCapacity(int Length, int Width, int Height)
 		{
-			return radius * radius * Math.PI * height;
+			return Length * Width * Height;
 		}
 	}
 }

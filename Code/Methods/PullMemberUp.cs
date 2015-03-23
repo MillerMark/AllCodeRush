@@ -15,20 +15,22 @@ namespace AllCodeRush.Code.Methods
 			solution.
 		 •———————————————————————————————————————————————————————• */
 
-	public class BaseClass
+	public class Shape2d
 	{
+		protected int Height;
+		protected int Width;
 
 	}
-	public class PullMemberUp : BaseClass
+	public class Projection3d : Shape2d
 	{
-		public void UsefulMethod()
+		private int Depth;
+		public int CalculateArea()
 		{
-
+			return Width * Height;
 		}
-
-		private void CallingMethod()
+		private int CalculateVolume()
 		{
-			UsefulMethod();
+			return CalculateArea() * Depth;
 		}
 	}
 }

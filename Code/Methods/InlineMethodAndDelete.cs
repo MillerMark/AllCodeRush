@@ -16,6 +16,7 @@ namespace AllCodeRush.Code.Methods
         
 			See also: Extract Method, Inline Method
 		 •———————————————————————————————————————————————————————• */
+
 	public class InlineMethodAndDelete
 	{
 		public double GetVolumeOfCylinder(int radius, int height)

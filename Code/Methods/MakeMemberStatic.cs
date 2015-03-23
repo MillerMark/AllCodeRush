@@ -27,7 +27,7 @@ namespace AllCodeRush.Code.Methods
 		}
 
 		#region Additional
-		// Note: The following function cannot be made static because it refernces an instance member
+		// Note: The following function cannot be made static because it references an instance member
 		private int _InstanceMember;
 		public int MethodUsingInstanceMember()
 		{

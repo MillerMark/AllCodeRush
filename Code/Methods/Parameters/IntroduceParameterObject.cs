@@ -24,22 +24,20 @@ namespace AllCodeRush.Code.Methods.Parameters
 	{
 		public void Foo()
 		{
-			ProcessPerson(new Person("John", "Adams", 37, "12345"));
+			ProcessPerson(new Customer("John", "Adams", "12345"));
 		}
-		private struct Person
+		private struct Customer
 		{
 			private string _forename;
 			private string _surname;
-			private int _age;
 			private string _tel;
 			/// <summary>
-			/// Summary for Person
+			/// Summary for Customer
 			/// </summary>
-			public Person(string Forename, string Surname, int Age, string Tel)
+			public Customer(string Forename, string Surname, string Tel)
 			{
 				_forename = Forename;
 				_surname = Surname;
-				_age = Age;
 				_tel = Tel;
 			}
 			public string Forename
@@ -56,13 +54,6 @@ namespace AllCodeRush.Code.Methods.Parameters
 					return _surname;
 				}
 			}
-			public int Age
-			{
-				get
-				{
-					return _age;
-				}
-			}
 			public string Tel
 			{
 				get
@@ -71,9 +62,12 @@ namespace AllCodeRush.Code.Methods.Parameters
 				}
 			}
 		}
-		private void ProcessPerson(Person person)
+
+		#region Support
+		private void ProcessPerson(Customer person)
 		{
 			throw new NotImplementedException();
 		}
+		#endregion
 	}
 }
