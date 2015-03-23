@@ -55,7 +55,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Code\Conditionals\Support\MyControl.cs" />
+    <Compile Include="XIssues\Disposable.cs" />
+    <Compile Include="XIssues\IndentNestedUsingStatements.cs" />
+    <Compile Include="XIssues\InlineConstant.cs" />
+    <Compile Include="XIssues\InlineRecentAssignment.cs" />
     <Compile Include="XIssues\Issues.cs" />
+    <Compile Include="XIssues\PromoteToParameterOptional.cs" />
+    <Compile Include="XIssues\UseEqualityOperator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
