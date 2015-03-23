@@ -29,5 +29,10 @@ namespace AllCodeRush.Code.DeclarationInitialization
 					throw new Exception("Unanticipated discount level");
 			}
 		}
+
+    private void IsRed(Suit suit)
+    {
+      return suit == Suit.Diamonds || suit == Suit.Diamonds;
+    }
 	}
 }

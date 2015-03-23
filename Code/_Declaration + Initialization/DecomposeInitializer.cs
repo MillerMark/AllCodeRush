@@ -20,7 +20,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	{
 		public Building CreateBuilding()
 		{
-      return new Building() { Floors = 5, Sublevels = 2, Name = "Omni Tower", MaxOccupancy = 700 };
+      return new Building() { Floors = 5, Sublevels = 2, Name = "Omni Tower", MaxOccupancy = 700, Zone = ZoningArea.Commercial};
 		}
 	}
 }

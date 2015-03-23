@@ -23,8 +23,10 @@ namespace AllCodeRush.Code.DeclarationInitialization
       fileStream.Write(decryptedXML, 0, decryptedXML.Length);
       fileStream.Close();
     
+
       // Consider using implicit variable declaration on the following line:
       System.Security.AccessControl.FileSecurity fileSecurity = new System.Security.AccessControl.FileSecurity();
+
 
       AllowFullAccess(fileSecurity);
       File.SetAccessControl(fileName, fileSecurity);

@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.DeclarationInitialization
 {
@@ -19,7 +16,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
 	{
 		public void Caller()
 		{
-			Person P = new Person("Tim", "Smith", 37);
+      Calculator.GetTotalPrice(100, 1, 50);
 		}
 	}
 }

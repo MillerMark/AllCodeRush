@@ -19,7 +19,7 @@ namespace AllCodeRush.Code.DeclarationInitialization
     public string GetFullName(string first, string last)
 		{
       if (!String.IsNullOrEmpty(first) && !String.IsNullOrEmpty(last))
-			  first = first + " " + last;
+        first = first + " " + last;
       else if (String.IsNullOrEmpty(first))
         first = last;
 

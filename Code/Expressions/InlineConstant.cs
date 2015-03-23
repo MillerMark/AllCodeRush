@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -16,8 +13,6 @@ namespace AllCodeRush.Code.Expressions
         
 			See also: Introduce Constant, Introduce Constant (Local)
 		 •———————————————————————————————————————————————————————• */
-
-	/* Question: Why can this not be invoked from the declaration of the constant */
 
 	public class InlineConstant
 	{
