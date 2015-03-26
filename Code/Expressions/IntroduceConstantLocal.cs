@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -19,9 +16,10 @@ namespace AllCodeRush.Code.Expressions
 
 	public class IntroduceConstantLocal
 	{
-		public double GetCircleArea(int radius)
-		{
-			return 3.14 * radius * radius;
-		}
+    public static TimeSpan GetLightSpan(double meters)
+    {
+      // TODO: Introduce a constant for the speed of light...
+      return TimeSpan.FromSeconds(meters / 2.9979e10);
+    }
 	}
 }

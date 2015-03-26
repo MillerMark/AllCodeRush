@@ -54,6 +54,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Code\Expressions\Support\Storage.cs" />
+    <Compile Include="Code\Expressions\Support\ActiveLogger.cs" />
     <Compile Include="Code\Methods\Support\CartEntry.cs" />
     <Compile Include="Code\Methods\Support\Cart.cs" />
     <Compile Include="Options\Editor\CodeFormatting.cs" />

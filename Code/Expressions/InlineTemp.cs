@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Drawing;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -20,11 +18,17 @@ namespace AllCodeRush.Code.Expressions
 
 	public class InlineTemp
 	{
-		public double GetCylinderVolume(int radius, int height)
-		{
-			int h = height;
-			int r = radius;
-			return r * r * h * Math.PI;
-		}
+    public double GetMarbleDisplacement(int radius, Rectangle floor)
+    {
+      int radiusSquared = radius * radius;
+      double circleArea = Math.PI * radiusSquared;
+      double floorArea = floor.Width * floor.Height;
+      int maxMarblesOnFloor = (int)Math.Floor(floorArea / circleArea);
+
+      int radiusCubed = radiusSquared * radius;
+      double marbleVolume = 4 / 3 * radiusCubed * Math.PI;
+
+      return marbleVolume * maxMarblesOnFloor;
+    }
 	}
 }

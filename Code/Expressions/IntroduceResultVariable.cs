@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -11,7 +8,7 @@ namespace AllCodeRush.Code.Expressions
 			Use Case: Introduces a variable to accept a 
 			value, replacing early-exit return statements with 
 			assignments to the variable and consolidating multiple 
-			method exit points into a single one.
+			method exit points into a single exit point.
          
 			Available: When the caret is on a return statement.
         
@@ -20,12 +17,23 @@ namespace AllCodeRush.Code.Expressions
 
 	public class IntroduceResultVariable
 	{
-		public bool isThisYourCard(bool CardIsAceOfSpades)
+    public enum NamePart
+    {
+      Given,
+      Surname,
+    }
+
+    public string GetName(string fullName, NamePart namePart, bool allUpper)
 		{
-			if (CardIsAceOfSpades)
-				return true;
-			else
-				return false;
+      int spacePos = fullName.IndexOf(' ');
+
+      switch (namePart)
+      {
+        case NamePart.Surname:
+          return fullName.Substring(spacePos + 1);
+        default:
+          return fullName.Substring(0, spacePos);
+      }
 		}
 	}
 }

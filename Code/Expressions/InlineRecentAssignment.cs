@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -11,26 +8,32 @@ namespace AllCodeRush.Code.Expressions
 			Use Case: Replaces the identifier at the caret 
 			with its most recent assignment.
          
-			Available: When the caret is on an variable or a property. 
-			Note: There should be an assignment to this variable or 
-			property prior to the current statement.
+			Available: When the caret is on an variable or a property
+      that has been previously assigned in the method body.
+   
+      See also: Inline Temp
 		 •———————————————————————————————————————————————————————• */
 
 	public class InlineRecentAssignment
 	{
 		private void TestMethod()
 		{
-			string Command = ReadCommand();
+      string command;
+
+      if (!NewCommandExists)
+        return;
+
+      command = GetActiveCommand();
+
+      if (String.IsNullOrEmpty(command))
+        return;
 			
-			Execute(Command);
-			
-			Command = ReadCommand();
-			
-			Execute(Command);
+			Execute(command);
 		}
 
 		#region Support
-		private string ReadCommand()
+    public bool NewCommandExists { get; set; }
+    private string GetActiveCommand()
 		{
 			return string.Empty;
 		}

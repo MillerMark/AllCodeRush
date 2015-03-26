@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Drawing;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -18,9 +16,9 @@ namespace AllCodeRush.Code.Expressions
 
 	public class IntroduceLocal
 	{
-		public double GetCylinderVolume(int radius, int height)
+		public double GetDistanceBetweenPoints(Point pt1, Point pt2)
 		{
-			return radius * radius * Math.PI * height;
+      return Math.Sqrt(Math.Pow(pt2.X - pt1.X, 2) + Math.Pow(pt2.Y - pt1.Y, 2));
 		}
 	}
 }

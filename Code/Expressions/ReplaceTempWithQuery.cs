@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -13,15 +10,20 @@ namespace AllCodeRush.Code.Expressions
 			the variable's initial value.
          
 			Available: When the caret is on a local variable 
-			declaration. The variable should be initialized right in the declaration statement.
+			declaration. The variable should be initialized right 
+      in the declaration statement.
 		 •———————————————————————————————————————————————————————• */
 
 	public class ReplaceTempWithQuery
 	{
-		private int Foo()
+    const double gravitationalConstant = 6.673e-11;
+    const double massOfEarth = 5.97219e24;
+
+    public double ForceFromEarth(double mass, double distance)
 		{
-			var a = 1 + 2 + 3 + 4;
-			return a;
+      double gravitationalConstantForEarth = massOfEarth * gravitationalConstant;
+
+      return gravitationalConstantForEarth * mass / (distance * distance);
 		}
 	}
 }

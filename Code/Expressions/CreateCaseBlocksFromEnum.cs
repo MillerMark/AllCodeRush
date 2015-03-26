@@ -1,15 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
 	/* •———————————————————————————————————————————————————————•
 			Feature: Create Case Blocks From Enum
         
-			Use Case: Generates Case statements for each element of 
-			the current enum.
+			Use Case: Generates Switch/Select statements for each 
+      element of the enum at the caret.
          
 			Available: When the caret is placed on a reference to an 
 			enum.
@@ -17,22 +14,25 @@ namespace AllCodeRush.Code.Expressions
 
 	public class CreateCaseBlocksFromEnum
 	{
-		private enum DiscountLevelEnum
+		private enum DiscountLevel
 		{
 			Platinum,
 			Gold,
 			Silver,
 			Bronze
 		}
-		private void Test()
+
+		private void TestDiscount()
 		{
-			DiscountLevelEnum DiscountLevel = GetDiscountLevel();
+			DiscountLevel discount = GetDiscountLevel();
+      
+                                                           
 		}
 
 		#region Utility
-		private DiscountLevelEnum GetDiscountLevel()
+		private DiscountLevel GetDiscountLevel()
 		{
-			return (DiscountLevelEnum)(new System.Random().Next(3));
+			return (DiscountLevel)(new System.Random().Next(3));
 		}
 		#endregion
 	}

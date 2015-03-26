@@ -16,10 +16,17 @@ namespace AllCodeRush.Code.Expressions
 
 	public class InlineConstant
 	{
-		public double GetCircleArea(int radius)
-		{
-			const double PI = 3.14;
-			return PI * radius * radius;
-		}
+    const double pi = Math.PI;
+
+    public static TimeSpan GetLightSpan(double meters)
+    {
+      const double LIGHTSPEED = 2.9979e10;
+      return TimeSpan.FromSeconds(meters / LIGHTSPEED);
+    }
+
+    public static double GetSphereVolume(int radius)
+    {
+      return 4 / 3 * pi * Math.Pow(radius, 3);
+    }
 	}
 }

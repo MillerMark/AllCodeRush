@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Expressions
 {
@@ -18,9 +15,10 @@ namespace AllCodeRush.Code.Expressions
 
 	public class IntroduceConstant
 	{
-		public double GetCircleArea(int radius)
+    public double GetCircleSegmentLength(double radius, double percentageAround)
 		{
-			return 3.14 * radius * radius;
+      // Let's introduce a constant for tau:
+      return 6.2831853071 * percentageAround * radius;
 		}
 	}
 }
