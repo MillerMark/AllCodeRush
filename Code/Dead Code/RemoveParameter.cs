@@ -3,7 +3,7 @@ using System;
 namespace AllCodeRush.Code.DeadCode
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Remove Unused Parameter
+		Feature: Remove Unused Parameter.
         
 		Use Case: Removes an unused parameter from a method 
 	  declaration and updates all calls accordingly.

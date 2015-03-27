@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Expand Lambda Expression
+		Feature: Expand Lambda Expression.
         
 		Use Case: Converts a Lambda Expression into an anonymous 
 	  method.
@@ -15,7 +15,6 @@ namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
 	 •—————————————————————————————————————————————————————————• */
 	public class ExpandLambdaExpression
 	{
-		Func<string, int> func = delegate(string s) { return s.Length; };
-
+		Func<string, int> func = s => s.Length;
 	}
 }

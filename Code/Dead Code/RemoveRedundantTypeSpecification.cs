@@ -3,7 +3,7 @@ using System;
 namespace AllCodeRush.Code.DeadCode
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Remove Redundant Type Specification
+		Feature: Remove Redundant Type Specification.
         
 		Use Case: Removes redundant type specifications from 
 	  lambda expression parameters.

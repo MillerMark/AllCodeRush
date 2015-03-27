@@ -3,7 +3,7 @@ using System;
 namespace AllCodeRush.Code.DeadCode.RemoveRedundantQualifier
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Remove Redundant Qualifier
+		Feature: Remove Redundant Qualifier.
         
 		Use Case: Removes an unnecessary 'this' or 'base' 
 	  qualifier.

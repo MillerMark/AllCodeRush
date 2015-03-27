@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Compress to Lambda Expression
+		Feature: Compress to Lambda Expression.
         
 		Use Case: Converts an anonymous method to a corresponding 
 	  lambda expression.

@@ -3,7 +3,7 @@ using System;
 namespace AllCodeRush.Code.DeadCode.RemoveRedundantCall
 {
 	/* •———————————————————————————————————————————————————————•
-			Feature: Remove Redundant Call
+			Feature: Remove Redundant Call.
         
 			Use Case 1: - Removes a redundant call to a base 
 										constructor.

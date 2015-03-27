@@ -3,7 +3,7 @@ using System;
 namespace AllCodeRush.Code.DeadCode
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Remove Redundant Constructor
+		Feature: Remove Redundant Constructor.
         
 		Use Case: Removes an empty constructor.
 
