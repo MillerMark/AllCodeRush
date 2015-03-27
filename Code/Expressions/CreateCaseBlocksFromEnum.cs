@@ -12,7 +12,7 @@ namespace AllCodeRush.Code.Expressions
 			enum.
 		 •———————————————————————————————————————————————————————• */
 
-	public class CreateCaseBlocksFromEnum
+  public class CreateCaseBlocksFromEnum
 	{
 		private enum DiscountLevel
 		{
@@ -22,18 +22,9 @@ namespace AllCodeRush.Code.Expressions
 			Bronze
 		}
 
-		private void TestDiscount()
+		private void OfferDiscount(DiscountLevel discount)
 		{
-			DiscountLevel discount = GetDiscountLevel();
-      
-                                                           
 		}
 
-		#region Utility
-		private DiscountLevel GetDiscountLevel()
-		{
-			return (DiscountLevel)(new System.Random().Next(3));
-		}
-		#endregion
 	}
 }
