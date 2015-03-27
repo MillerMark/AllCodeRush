@@ -63,6 +63,7 @@
     <Compile Include="Code\Dead Code\RemoveRedundantConstructor.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantDestructor.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantQualifier.cs" />
+    <Compile Include="Code\Expressions\Support\Customer.cs" />
     <Compile Include="Code\Expressions\Support\Storage.cs" />
     <Compile Include="Code\Expressions\Support\ActiveLogger.cs" />
     <Compile Include="Code\Lambda Expressions + Anonymous Methods\CompressToLambdaExpression.cs" />
