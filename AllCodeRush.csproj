@@ -65,6 +65,8 @@
     <Compile Include="Code\Dead Code\RemoveRedundantQualifier.cs" />
     <Compile Include="Code\Expressions\Support\Storage.cs" />
     <Compile Include="Code\Expressions\Support\ActiveLogger.cs" />
+    <Compile Include="Code\Lambda Expressions + Anonymous Methods\CompressToLambdaExpression.cs" />
+    <Compile Include="Code\Lambda Expressions + Anonymous Methods\ExpandLambdaExpression.cs" />
     <Compile Include="Code\Methods\Support\CartEntry.cs" />
     <Compile Include="Code\Methods\Support\Cart.cs" />
     <Compile Include="Options\Editor\CodeFormatting.cs" />
@@ -228,7 +230,6 @@
     <Folder Include="Code\Clipboard\" />
     <Folder Include="Code\Comments + Regions\" />
     <Folder Include="Code\Formatting\" />
-    <Folder Include="Code\Lambda Expressions + Anonymous Methods\" />
     <Folder Include="Code\Loops + Blocks\" />
     <Folder Include="Code\Namespaces + Type Qualifiers\" />
     <Folder Include="Code\Parallel Computing\" />

@@ -11,7 +11,7 @@ namespace AllCodeRush.Code.DeadCode
 	  Available: When the caret is within the declaration of a 
 	  method parameter and that parameter is unused within the 
 	  method. 
-	 •———————————————————————————————————————————————————————• */
+	 •—————————————————————————————————————————————————————————• */
 	public class RemoveParameter
 	{
 		public decimal TimeToDestination(decimal DistanceInMiles, decimal SpeedInMPH, DateTime StartTime)

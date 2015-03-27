@@ -10,7 +10,7 @@ namespace AllCodeRush.Code.DeadCode
 	  Available: When the caret is on a constructor declaration. 
 	  Requires that the constructor is empty and has no 
 	  parameters. 
-	 •———————————————————————————————————————————————————————• */
+	 •—————————————————————————————————————————————————————————• */
 
 	public class RemoveRedundantConstructor
 	{

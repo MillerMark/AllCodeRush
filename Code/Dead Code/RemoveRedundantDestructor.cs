@@ -8,7 +8,7 @@ namespace AllCodeRush.Code.DeadCode
 		Use Case: Removes an empty Destructor.
 
 	  Available: When the caret is on a Destructor declaration. 
-	 •———————————————————————————————————————————————————————• */
+	 •—————————————————————————————————————————————————————————• */
 	public class RemoveRedundantDestructor
 	{
 		~RemoveRedundantDestructor()

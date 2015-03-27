@@ -5,13 +5,13 @@ namespace AllCodeRush.Code.DeadCode.RemovePrivateSetter
 	/* •———————————————————————————————————————————————————————•
 		Feature: Remove Private Setter
         
-		Use Case: Removes an unused parameter from a method 
-	  declaration and updates all calls accordingly.
+		Use Case: Removes an private property setter that simply 
+	  assigns a value to a field without any side-effects.
 	 
-	  Available: When the caret is within the declaration of a 
-	  method parameter and that parameter is unused within the 
-	  method. 
-	 •———————————————————————————————————————————————————————• */
+	  Available: When the caret is caret is on a private property 
+	  setter, provided that the setter's body contains only one 
+	  field initializer. 
+	 •—————————————————————————————————————————————————————————• */
 	public class Customer
 	{
 		private DiscountLevelEnum _discountLevel;

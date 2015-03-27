@@ -10,7 +10,7 @@ namespace AllCodeRush.Code.DeadCode
 
 	  Available: When the caret is within a lambda expression 
 	  parameters list. 
-	 •———————————————————————————————————————————————————————• */
+	 •—————————————————————————————————————————————————————————• */
 	public class RemoveRedundantTypeSpecification
 	{
 		static void Main(string[] args)
