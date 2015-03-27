@@ -34,25 +34,27 @@ namespace AllCodeRush.Options.Editor
 		// ie Declare Method, Declare Property
 		public void AnotherComplexMethod()
 		{
-			int StartPoint = 0;
-			Initialize(StartPoint);
-			CalculateNextPosition(GetCurrentPosition);
+			try
+			{
+				int StartPoint = 0;
+				Initialize(StartPoint);
+				CalculateNextPosition(GetCurrentPosition);
+			}
+			catch
+			{
+				CleanUp();
+			}
 		}
+
+		#region Support
 		private int CalculateNextPosition(int CurrentPosition)
 		{
 			return CurrentPosition + 1;
 		}
-	}
-	#region Support
-	public class Disposable : IDisposable
-	{
-		public void Dispose()
+		private void CleanUp()
 		{
 			throw new NotImplementedException();
 		}
+		#endregion
 	}
-	#endregion
-	//Report c -> Try catch bug
-	// Ability for classes and delegates to have separate "in-new file" settings.
-  // interfaces structs
 }
