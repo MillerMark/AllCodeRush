@@ -17,12 +17,6 @@ namespace AllCodeRush.Code.DeadCode
     public event EventHandler Click;
     public RemoveEmptyHandler()
     {
-      Click += DoNothing;
-    }
-
-    void DoNothing(object sender, EventArgs e)
-    {
-      throw new NotImplementedException();
     }
   }
 }

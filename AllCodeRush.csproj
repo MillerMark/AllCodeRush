@@ -55,11 +55,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Code\Dead Code\RemoveEmptyHandler.cs" />
-    <Compile Include="Code\Dead Code\RemoveParameter.cs" />
+    <Compile Include="Code\Dead Code\RemoveUnusedParameter.cs" />
     <Compile Include="Code\Dead Code\RemovePrivateSetter.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantDelegateCreation.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantQualifierAll.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantTypeSpecification.cs" />
+    <Compile Include="Code\Dead Code\RemoveUnusedParameters.cs" />
     <Compile Include="Code\Dead Code\Support\BaseAccount.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantCall.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantConstructor.cs" />
