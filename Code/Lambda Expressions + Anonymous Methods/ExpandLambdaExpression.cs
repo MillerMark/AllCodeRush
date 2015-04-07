@@ -16,6 +16,6 @@ namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
      •———————————————————————————————————————————————————————• */
   public class ExpandLambdaExpression
 	{
-    Func<string, char, int> getCharCount = (workStr, matchCharacter) => workStr.Split(matchCharacter).Length - 1;
+    protected Func<string, char, int> charCount = (workStr, matchCharacter) => workStr.Split(matchCharacter).Length - 1;
 	}
 }
