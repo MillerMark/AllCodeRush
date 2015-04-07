@@ -2,18 +2,23 @@ using System;
 
 namespace AllCodeRush.Code.DeadCode
 {
-	#region Support
 	public class BaseAccount
 	{
-		private decimal _Balance;
+		protected decimal balance;
 		public void Withdraw(decimal Value)
 		{
-			_Balance = _Balance - Value;
+			balance = balance - Value;
 		}
 		public void Deposit(decimal Value)
 		{
-			_Balance = _Balance + Value;
+			balance = balance + Value;
 		}
-	}
-	#endregion
+    public decimal Balance
+    {
+      get
+      {
+        return balance;
+      }
+    }
+  }
 }

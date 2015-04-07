@@ -1,6 +1,6 @@
 using System;
 
-namespace AllCodeRush.Code.DeadCode.RemoveRedundantCall
+namespace AllCodeRush.Code.DeadCode
 {
 	/* •———————————————————————————————————————————————————————•
 			Feature: Remove Redundant Call.
@@ -14,31 +14,20 @@ namespace AllCodeRush.Code.DeadCode.RemoveRedundantCall
 			argument.
 		 •———————————————————————————————————————————————————————• */
 
-	public class CurrentAccount : Account
+	public class RemoveRedundantCall : BaseAccount
 	{
-		private decimal _Limit = 0m;
-		public CurrentAccount()
+		private decimal limit = 0m;
+		public RemoveRedundantCall()
 			: base()
 		{
 		}
 
-		private void Withdraw(decimal Value)
+		private void Withdraw(decimal value)
 		{
-			if (_balance - Value < _Limit)
-			{
-				throw new Exception(string.Format("You do not have sufficient credit."));
-			}
-			else
-				_balance = _balance - Value;
+      if (balance - value < limit)
+        throw new Exception(string.Format("You have insufficient credit."));
+      else
+        balance = balance - value;
 		}
 	}
-	#region Support
-	public class Account
-	{
-		protected decimal _balance;
-		public Account()
-		{
-		}
-	}
-	#endregion
 }

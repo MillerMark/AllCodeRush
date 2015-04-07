@@ -1,28 +1,37 @@
 using System;
 
-namespace AllCodeRush.Code.DeadCode.RemoveRedundantQualifierAll
+namespace AllCodeRush.Code.DeadCode
 {
-	/* •———————————————————————————————————————————————————————•
-		Feature: Remove Redundant Qualifier (All).
+  /* •———————————————————————————————————————————————————————•
+      Feature: Remove Redundant Qualifier (All).
         
-		Use Case: Removes an ALL unnecessary 'this' or 'base' 
-	  qualifiers.
+      Use Case: Removes ALL unnecessary 'this' or 'base' 
+      qualifiers from the active class.
 
-	  Available: When the caret is on a 'this' or 'base' 
-	  qualifier which is unnecessary in the current context 
-	  and more than one such qulifier is in scope. 
-	 •—————————————————————————————————————————————————————————• */
+      Available: When the caret is on a 'this' or 'base' 
+      qualifier which is unnecessary in the current context 
+      and at least one other matching qualifier is in scope. 
+     •—————————————————————————————————————————————————————————• */
 
-	public class Account : BaseAccount
-	{
-		public void TransferToAccounts(decimal Value, Account Account1, Account Account2)
-		{
-			this.Withdraw(Value);
-			Account1.Deposit(Value);
-			this.Withdraw(Value);
-			Account2.Deposit(Value);
+  public class RemoveRedundantQualifierAll : BaseAccount
+  {
+    private void VerifyFunds(decimal value)
+    {
+      if (this.Balance > value)
+        return;
+      throw new Exception("Insufficient funds!");
+    }
 
-		}
-	}
+    public void TransferToAccount(decimal value, BaseAccount account)
+    {
+      this.VerifyFunds(value);
+      this.Withdraw(value);
+      account.Deposit(value);
+    }
 
+    public decimal GetBalance()
+    {
+      return this.Balance;
+    }
+  }
 }

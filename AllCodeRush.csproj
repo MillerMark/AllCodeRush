@@ -63,6 +63,9 @@
     <Compile Include="Code\Dead Code\RemoveRedundantConstructor.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantDestructor.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantQualifier.cs" />
+    <Compile Include="Code\Dead Code\Support\Button.cs" />
+    <Compile Include="Code\Dead Code\Support\Form.cs" />
+    <Compile Include="Code\Dead Code\Support\TextBox.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\InlineAlias.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\IntroduceAlias.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\IntroduceAliasReplaceAll.cs" />

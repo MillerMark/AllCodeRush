@@ -1,23 +1,23 @@
 using System;
 
-namespace AllCodeRush.Code.DeadCode.RemoveRedundantQualifier
+namespace AllCodeRush.Code.DeadCode
 {
 	/* •———————————————————————————————————————————————————————•
-		Feature: Remove Redundant Qualifier.
+		  Feature: Remove Redundant Qualifier.
         
-		Use Case: Removes an unnecessary 'this' or 'base' 
-	  qualifier.
+		  Use Case: Removes an unnecessary 'this' or 'base' 
+	    qualifier.
 
-	  Available: When the caret is on a 'this' or 'base' 
-	  qualifier which is unnecessary in the current context. 
-	 •—————————————————————————————————————————————————————————• */
+	    Available: When the caret is on a 'this' or 'base' 
+	    qualifier which is unnecessary in the current context. 
+	   •—————————————————————————————————————————————————————————• */
 
-	public class Account : BaseAccount
+  public class RemoveRedundantQualifier: BaseAccount
 	{
-		public void TransferToAccount(decimal Value, Account OtherAccount)
+		public void TransferToAccount(decimal Value, BaseAccount targetAccount)
 		{
 			this.Withdraw(Value);
-			OtherAccount.Deposit(Value);
+			targetAccount.Deposit(Value);
 		}
 	}
 }
