@@ -22,7 +22,7 @@ namespace AllCodeRush.Code.DeadCode
 		{
 		}
 
-		private void Withdraw(decimal value)
+		public void Withdraw(decimal value)
 		{
       if (balance - value < limit)
         throw new Exception(string.Format("You have insufficient credit."));
