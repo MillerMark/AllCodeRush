@@ -1,6 +1,6 @@
 using System;
 
-namespace AllCodeRush.Code.Expressions
+namespace AllCodeRush.Code.Methods
 {
   public class CreateOverload
 	{

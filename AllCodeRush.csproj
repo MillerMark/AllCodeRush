@@ -83,7 +83,7 @@
     <Compile Include="Code\Namespaces + Type Qualifiers\UseShortNotation.cs" />
     <Compile Include="Code\_Expressions\Support\Customer.cs" />
     <Compile Include="Code\_Expressions\Support\Storage.cs" />
-    <Compile Include="Code\_Expressions\Support\ActiveLogger.cs" />
+    <Compile Include="Code\Methods\Support\ActiveLogger.cs" />
     <Compile Include="Code\Lambda Expressions + Anonymous Methods\CompressToLambdaExpression.cs" />
     <Compile Include="Code\Lambda Expressions + Anonymous Methods\ExpandLambdaExpression.cs" />
     <Compile Include="Code\Lambda Expressions + Anonymous Methods\InlineDelegate.cs" />
@@ -148,7 +148,7 @@
     <Compile Include="Code\_Declaration + Initialization\Support\Building.cs" />
     <Compile Include="Code\_Declaration + Initialization\Support\Calculator.cs" />
     <Compile Include="Code\_Expressions\CreateCaseBlocksFromEnum.cs" />
-    <Compile Include="Code\_Expressions\CreateOverload.cs" />
+    <Compile Include="Code\Methods\CreateOverload.cs" />
     <Compile Include="Code\_Expressions\InlineConstant.cs" />
     <Compile Include="Code\_Expressions\InlineRecentAssignment.cs" />
     <Compile Include="Code\_Expressions\InlineResult.cs" />
