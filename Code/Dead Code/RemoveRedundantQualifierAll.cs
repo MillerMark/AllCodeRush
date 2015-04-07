@@ -11,6 +11,8 @@ namespace AllCodeRush.Code.DeadCode
       Available: When the caret is on a 'this' or 'base' 
       qualifier which is unnecessary in the current context 
       and at least one other matching qualifier is in scope. 
+   
+      See also: Remove Redundant Qualifier
      •—————————————————————————————————————————————————————————• */
 
   public class RemoveRedundantQualifierAll : BaseAccount

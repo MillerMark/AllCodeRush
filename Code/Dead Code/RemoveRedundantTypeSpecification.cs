@@ -20,7 +20,7 @@ namespace AllCodeRush.Code.DeadCode
       btnLoad.Click += async (object sender, EventArgs e) =>
                        {
                          await LoadListboxChoicesAsync();
-                         base.txtStatus.Text += "\r\nButton clicked.\r\n";
+                         base.txtStatus.Text += "Button clicked.";
                        };
     }
 
