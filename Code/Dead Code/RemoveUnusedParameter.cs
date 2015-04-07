@@ -16,9 +16,15 @@ namespace AllCodeRush.Code.DeadCode
      •————————————————————————————————————————————————————————• */
   public class RemoveUnusedParameter
 	{
-    public decimal TimeToDestination(DateTime startTime, decimal distance, decimal velocity)
-		{
-			return distance / velocity;
-		}
+    public double TimeToDestination(DateTime startTime, double distance, double velocity)
+    {
+      return distance / velocity;
+    }
+
+    public DateTime CalculateArrivalTime()
+    {
+      DateTime startTime = DateTime.Now;
+      return startTime + TimeSpan.FromSeconds(TimeToDestination(startTime, 1000, 200));
+    }
 	}
 }
