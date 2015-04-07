@@ -14,9 +14,9 @@ namespace AllCodeRush.Code.DeadCode
 	 •—————————————————————————————————————————————————————————• */
 	public class RemoveParameter
 	{
-		public decimal TimeToDestination(decimal DistanceInMiles, decimal SpeedInMPH, DateTime StartTime)
+		public decimal TimeToDestination(decimal distance, decimal velocity, DateTime startTime)
 		{
-			return DistanceInMiles / SpeedInMPH;
+			return distance / velocity;
 		}
 	}
 }
