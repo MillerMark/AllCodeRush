@@ -54,8 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Code\Dead Code\RemoveEmptyHandler.cs" />
     <Compile Include="Code\Dead Code\RemoveParameter.cs" />
     <Compile Include="Code\Dead Code\RemovePrivateSetter.cs" />
+    <Compile Include="Code\Dead Code\RemoveRedundantDelegateCreation.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantQualifierAll.cs" />
     <Compile Include="Code\Dead Code\RemoveRedundantTypeSpecification.cs" />
     <Compile Include="Code\Dead Code\Support\BaseAccount.cs" />
