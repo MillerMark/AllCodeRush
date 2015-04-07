@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
 {
@@ -17,13 +15,25 @@ namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
 		 •———————————————————————————————————————————————————————• */
 	public class InlineDelegate
 	{
+    public enum Operation
+    {
+      Add,
+      Difference
+    }
 		private int Add(int x, int y)
 		{
 			return x + y;
 		}
-		private void AssignCalculations()
-		{
-			Func<int, int, int> adder1 = Add;
-		}
+    private int Difference(int x, int y)
+    {
+      return x - y;
+    }
+    public virtual Func<int, int, int> GetOperation(Operation operation)
+    {
+      if (operation == Operation.Add)
+        return Add;
+      else
+        return Difference;
+    }
 	}
 }
