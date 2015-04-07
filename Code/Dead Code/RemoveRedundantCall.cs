@@ -5,7 +5,8 @@ namespace AllCodeRush.Code.DeadCode
 	/* •———————————————————————————————————————————————————————•
 			Feature: Remove Redundant Call.
         
-			Use Case: Removes a call to a method that does nothing.
+			Use Case: Removes a call to a method or constructor 
+      that does nothing.
          
 			Available: When the caret is on a call to an empty base 
 			constructor or on a call to String.Format with a single 
