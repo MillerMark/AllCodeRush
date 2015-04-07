@@ -54,7 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Code\Lambda Expressions + Anonymous Methods\Support\BaseNameAnonymousMethod.cs" />
+    <Compile Include="Code\_Lambda Expressions + Anonymous Methods\Support\BaseNameAnonymousMethod.cs" />
     <Compile Include="Code\_Dead Code\RemoveEmptyHandler.cs" />
     <Compile Include="Code\_Dead Code\RemoveUnusedParameter.cs" />
     <Compile Include="Code\_Dead Code\RemovePrivateSetter.cs" />
@@ -91,10 +91,10 @@
     <Compile Include="Code\_Expressions\Support\Customer.cs" />
     <Compile Include="Code\_Expressions\Support\Storage.cs" />
     <Compile Include="Code\Methods\Support\ActiveLogger.cs" />
-    <Compile Include="Code\Lambda Expressions + Anonymous Methods\CompressToLambdaExpression.cs" />
-    <Compile Include="Code\Lambda Expressions + Anonymous Methods\ExpandLambdaExpression.cs" />
-    <Compile Include="Code\Lambda Expressions + Anonymous Methods\InlineDelegate.cs" />
-    <Compile Include="Code\Lambda Expressions + Anonymous Methods\NameAnonymousMethod.cs" />
+    <Compile Include="Code\_Lambda Expressions + Anonymous Methods\CompressToLambdaExpression.cs" />
+    <Compile Include="Code\_Lambda Expressions + Anonymous Methods\ExpandLambdaExpression.cs" />
+    <Compile Include="Code\_Lambda Expressions + Anonymous Methods\InlineDelegate.cs" />
+    <Compile Include="Code\_Lambda Expressions + Anonymous Methods\NameAnonymousMethod.cs" />
     <Compile Include="Code\Methods\Support\CartEntry.cs" />
     <Compile Include="Code\Methods\Support\Cart.cs" />
     <Compile Include="Options\Editor\CodeFormatting.cs" />
