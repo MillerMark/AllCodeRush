@@ -12,6 +12,8 @@ namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
 	    method it is removed.
          
 			Available: When the caret is on a delegate method.
+    
+      See also: Name Anonymous Method
 		 •———————————————————————————————————————————————————————• */
 	public class InlineDelegate
 	{
