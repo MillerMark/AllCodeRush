@@ -16,7 +16,7 @@ namespace AllCodeRush.Code.NamespacesTypeQualifiers
 
 	public class UseShortNotation
 	{
-		bool? IsCatAlive;
+		Nullable <bool> IsCatAlive;
 
 		private void CheckOnShrodingersCat()
 		{
