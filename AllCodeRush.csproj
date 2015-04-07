@@ -66,6 +66,7 @@
     <Compile Include="Code\Namespaces + Type Qualifiers\InlineAlias.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\IntroduceAlias.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\IntroduceAliasReplaceAll.cs" />
+    <Compile Include="Code\Namespaces + Type Qualifiers\OptimizeNamespaceReferences.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\RemoveTypeQualifierReplaceAll.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\Support\Settings.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\SortNamespaceReferences.cs" />
@@ -78,6 +79,8 @@
     <Compile Include="Code\Namespaces + Type Qualifiers\Support\ShoppingBasketItem.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\Support\Universe\SolarSystem.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\Support\Universe\Star.cs" />
+    <Compile Include="Code\Namespaces + Type Qualifiers\UseExplicitNotation.cs" />
+    <Compile Include="Code\Namespaces + Type Qualifiers\UseShortNotation.cs" />
     <Compile Include="Code\_Expressions\Support\Customer.cs" />
     <Compile Include="Code\_Expressions\Support\Storage.cs" />
     <Compile Include="Code\_Expressions\Support\ActiveLogger.cs" />
