@@ -15,6 +15,6 @@ namespace AllCodeRush.Code.LambdaExpressionsAnonymousMethods
      •—————————————————————————————————————————————————————————• */
   public class CompressToLambdaExpression
 	{
-		Func<string, int> func = delegate(string s) { return s.Length; };
+    protected Func<string, int> func = delegate(string s) { return s.Length; };
 	}
 }
