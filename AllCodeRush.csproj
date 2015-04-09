@@ -54,9 +54,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Code\Methods\Support\AuthenticationCode.cs" />
     <Compile Include="Code\Methods\ConvertToFunction.cs" />
     <Compile Include="Code\Methods\ConvertToProcedure.cs" />
     <Compile Include="Code\Methods\ExtractMethodToType.cs" />
+    <Compile Include="Code\Methods\MakeExtension.cs" />
+    <Compile Include="Code\Methods\Support\Person.cs" />
+    <Compile Include="Code\Methods\SafeRename.cs" />
     <Compile Include="Code\Methods\Support\Item.cs" />
     <Compile Include="Code\Methods\Support\ShoppingCart.cs" />
     <Compile Include="Code\_Lambda Expressions + Anonymous Methods\Support\BaseNameAnonymousMethod.cs" />
