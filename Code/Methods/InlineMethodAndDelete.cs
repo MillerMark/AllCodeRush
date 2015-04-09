@@ -1,31 +1,29 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Methods
 {
-	/* •———————————————————————————————————————————————————————•
-			Feature: Inline Method (and Delete)
+  /* •————————————————————————————————————————————————————————•
+      Feature: Inline Method (and delete)
         
-			Use Case: Lets you replace calls to a method with the 
-			method's body. The method is then deleted.
+      Use Case: Replace a method call with that method's body,
+      and deletes the original method.
          
-			Available: When the caret is on the method name, within 
-			its call or declaration.
+      Available: When the caret is on a method call that is 
+      called from no other locations in the solution.
         
-			See also: Extract Method, Inline Method
-		 •———————————————————————————————————————————————————————• */
+      See also: Extract Method, Inline Method
+     •————————————————————————————————————————————————————————• */
 
-	public class InlineMethodAndDelete
+  public class InlineMethodAndDelete
 	{
-		public double GetVolumeOfCylinder(int radius, int height)
+    public double GetVolumeOfPrism(double @base, double height, double depth)
+    {
+      return GetAreaOfTriangle(@base, height) * depth;
+    }
+
+    private static double GetAreaOfTriangle(double @base, double height)
 		{
-			return GetAreaOfCircle(radius) * height;
-		}
-		private static double GetAreaOfCircle(int radius)
-		{
-			return radius * radius * Math.PI;
+      return (@base * height) / 2;
 		}
 	}
 }

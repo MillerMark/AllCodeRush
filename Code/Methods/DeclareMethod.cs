@@ -12,7 +12,6 @@ namespace AllCodeRush.Code.Methods
         
 			See also: Declare Method (Abstract)
 		 •———————————————————————————————————————————————————————• */
-
 	public class Account
 	{
 		private int _value;
@@ -20,11 +19,13 @@ namespace AllCodeRush.Code.Methods
 		{
 			_value = Value;
 		}
-		private void TransferMoney(Account DestAccount, int Value)
+		public void TransferMoney(Account DestAccount, int Value)
 		{
 			this.Withdraw(Value);
 			DestAccount.Deposit(Value);
+      LogBalance(DateTime.Now, DestAccount);
 		}
+
 		public void Withdraw(int value)
 		{
 			_value -= value;

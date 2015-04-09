@@ -1,18 +1,15 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Methods
 {
 	/* •———————————————————————————————————————————————————————•
 			Feature: Make Member Non-Static
         
-			Use Case: Lets you make a static member an instance 
-			member and updates all references accordingly.
+			Use Case: Makes a static member an instance member and 
+      updates all references accordingly.
          
-			Available: When the cursor is on a static method 
-			declaration.
+			Available: When the caret is on a static method 
+      declaration.
         
 			See also: Make Member Static
 		 •———————————————————————————————————————————————————————• */
@@ -28,6 +25,5 @@ namespace AllCodeRush.Code.Methods
 			}
 			return total;
 		}
-
 	}
 }
