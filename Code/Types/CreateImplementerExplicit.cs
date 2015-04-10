@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace AllCodeRush.Code.Types.CreateImplementerImplicit
 {
 	/* •—————————————————————————————————————————————————————————•
-	    Feature: Create Implementer Implicit
+	    Feature: Create Implementer (Implicit)
          
 	    Use Case: Creates a class implicitly implementing a 
 	    current interface.

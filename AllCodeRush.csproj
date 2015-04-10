@@ -64,6 +64,8 @@
     <Compile Include="Code\Methods\Support\Item.cs" />
     <Compile Include="Code\Methods\Support\ShoppingCart.cs" />
     <Compile Include="Code\Types\CreateImplementerExplicit.cs" />
+    <Compile Include="Code\Types\DeclareClass.cs" />
+    <Compile Include="Code\Types\DeclareClassWithProperties.cs" />
     <Compile Include="Code\_Lambda Expressions + Anonymous Methods\Support\BaseNameAnonymousMethod.cs" />
     <Compile Include="Code\_Dead Code\RemoveEmptyHandler.cs" />
     <Compile Include="Code\_Dead Code\RemoveUnusedParameter.cs" />
