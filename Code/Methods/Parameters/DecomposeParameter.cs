@@ -1,46 +1,60 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Net.Mail;
 
 namespace AllCodeRush.Code.Methods.Parameters
 {
-	/* •———————————————————————————————————————————————————————•
-			Feature: Decompose Parameter
+  /* •———————————————————————————————————————————————————————•
+      Feature: Decompose Parameter
         
-			Use Case: Lets you replace a single parameter with one or 
-			more new parameters, each representing a property accessed 
-			in the original parameter. And appropriately changes all 
-			method references.
+      Use Case: Lets you replace a single parameter with one or 
+      more new parameters, each representing a property accessed 
+      in the original parameter. And appropriately changes all 
+      method references.
          
-			Available:  
-			 - When the caret is on a parameter declaration. The 
-			 parameter should be a complex-type.
-			 - When the caret is on a reference to a property of a 
-			 complex-type parameter.
+      Available:  
+       - When the caret is on a declaration for a parameter 
+         that is exclusively used to reference its properties 
+         in the method body.
+       - When the caret is on a reference to a property of a 
+         parameter.
         
-			See also: Introduce Parameter Object
-		 •———————————————————————————————————————————————————————• */
+      See also: Introduce Parameter Object
+     •———————————————————————————————————————————————————————• */
+
+  public class Email
+  {
+    public static string Signature { get; set; }
+    public static void Send(Customer customer, string subject, string body)
+    {
+      MailMessage mail = new MailMessage("coyote@acme.com", customer.Email);
+      using (SmtpClient client = new SmtpClient())
+      {
+        client.Port = 25;
+        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+        client.UseDefaultCredentials = false;
+        client.Host = "smtp.google.com";
+        mail.Subject = subject;
+        mail.Body = String.Format("Dear {0},", customer.Name) + Environment.NewLine + 
+                    body + Environment.NewLine + 
+                    Signature;
+        client.Send(mail);
+      }
+    }
+  }
 
 	public class DecomposeParameter
 	{
-		private void DisplayNames()
+    public void MailMerge(List<Customer> customers, string subject, string body)
 		{
-			Customer p1 = new Customer() { Name = "Adam", Age = 37, Tel = "12345" };
-			Customer p2 = new Customer() { Name = "Bob", Age = 22, Tel = "54321" };
-			DisplayName(p1);
-			DisplayName(p2);
+      foreach (Customer customer in customers)
+        if (OldEnough(customer))
+          Email.Send(customer, subject, body);
 		}
 
-		private void DisplayName(Customer customer)
-		{
-			Console.WriteLine("The name of this person is {0}", customer.Name);
-		}
-	}
-	public class Customer
-	{
-		public string Name { get; set; }
-		public int Age { get; set; }
-		public string Tel { get; set; }
+    private bool OldEnough(Customer customer)
+    {
+      return customer.Age >= 21;
+    }
 	}
 }

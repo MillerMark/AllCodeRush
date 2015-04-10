@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Code\Methods\Parameters\Customer.cs" />
     <Compile Include="Code\Methods\Support\AuthenticationCode.cs" />
     <Compile Include="Code\Methods\ConvertToFunction.cs" />
     <Compile Include="Code\Methods\ConvertToProcedure.cs" />
