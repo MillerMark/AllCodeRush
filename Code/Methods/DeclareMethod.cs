@@ -2,6 +2,7 @@
 
 namespace AllCodeRush.Code.Methods
 {
+ 
 	/* •———————————————————————————————————————————————————————•
 			Feature: Declare Method
         
@@ -19,11 +20,11 @@ namespace AllCodeRush.Code.Methods
       balance = value;
 		}
 
-    public void TransferMoney(BaseAccount destAccount, int value)
+    public void TransferMoney(BaseAccount destinationAccount, int value)
 		{
-			this.Withdraw(value);
-			destAccount.Deposit(value);
-      LogBalance(DateTime.Now, destAccount);
+			Withdraw(value);
+			destinationAccount.Deposit(value);
+      LogBalance(DateTime.Now, destinationAccount);
 		}
 	}
 }
