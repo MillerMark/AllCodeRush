@@ -63,6 +63,7 @@
     <Compile Include="Code\Methods\SafeRename.cs" />
     <Compile Include="Code\Methods\Support\Item.cs" />
     <Compile Include="Code\Methods\Support\ShoppingCart.cs" />
+    <Compile Include="Code\Types\CreateImplementerExplicit.cs" />
     <Compile Include="Code\_Lambda Expressions + Anonymous Methods\Support\BaseNameAnonymousMethod.cs" />
     <Compile Include="Code\_Dead Code\RemoveEmptyHandler.cs" />
     <Compile Include="Code\_Dead Code\RemoveUnusedParameter.cs" />
@@ -101,7 +102,7 @@
     <Compile Include="Code\Types\CreateAncestor.cs" />
     <Compile Include="Code\Types\CreateDescendant.cs" />
     <Compile Include="Code\Types\CreateDescendantWithVirtualOverrides.cs" />
-    <Compile Include="Code\Types\CreateImplementer.cs" />
+    <Compile Include="Code\Types\CreateImplementerImplicit.cs" />
     <Compile Include="Code\_Expressions\Support\Customer.cs" />
     <Compile Include="Code\_Expressions\Support\Storage.cs" />
     <Compile Include="Code\Methods\Support\ActiveLogger.cs" />

@@ -2,15 +2,16 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace AllCodeRush.Code.Types
+namespace AllCodeRush.Code.Types.CreateImplementerImplicit
 {
 	/* •—————————————————————————————————————————————————————————•
-	    Feature: Create Implementer
+	    Feature: Create Implementer Implicit
          
-	    Use Case: Creates a new Class which implements the given Interface.
+	    Use Case: Creates a class implicitly implementing a 
+	    current interface.
 	 
-			Available: When the edit cursor or caret is on a class 
-	    name within its declaration.  
+			Available: When the caret is on an interface name within 
+	    an interface declaration.  
 		 •—————————————————————————————————————————————————————————• */
 	public interface ILogger
 	{
