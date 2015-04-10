@@ -14,12 +14,12 @@ namespace AllCodeRush.Code.Methods
       See also: Declare Method
      •———————————————————————————————————————————————————————• */
 
-  public abstract class RectangularPrism
+  public abstract class Prism
 	{
     protected double depth;
-    public double CalculateVolume(double edge1, double edge2)
+    public double CalculateVolume(double containingWidth, double containingHeight)
 		{
-			return CalculateBase(edge1, edge2) * depth;
+			return CalculateBase(containingWidth, containingHeight) * depth;
 		}
 	}
 }
