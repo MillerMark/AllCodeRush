@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace AllCodeRush.Code.Types
+namespace AllCodeRush.Code.Types.AddToInterface
 {
 	/* •—————————————————————————————————————————————————————————•
 	    Feature: Add to Interface
