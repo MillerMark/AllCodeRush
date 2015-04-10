@@ -18,15 +18,25 @@ namespace AllCodeRush.Code.Methods
      •———————————————————————————————————————————————————————• */
   public class ExtractMethod
   {
-    public void DynamicCreate()
+    public void DynamicCreate(ref string idStr)
     {
       DataSet dataSet = new DataSet();
       DataTable table = new DataTable();
       table.Columns.Add(new DataColumn("ID", Type.GetType("System.Int32")));
       table.Columns.Add(new DataColumn("Name", Type.GetType("System.String")));
 
-      int id = 1;
+      int id = 0;
+      string workStr = idStr;
+
+      if (workStr != null && id != -1 && !int.TryParse(workStr, out id))
+      {
+        workStr = string.Format("Error: \"{0}\" is not an integer.", workStr);
+        id = -1;
+      }
+      
       string name = "first row";
+
+      idStr = workStr;
 
       // Add the row:
       DataRow row = table.NewRow();
@@ -40,5 +50,7 @@ namespace AllCodeRush.Code.Methods
       for (int i = 0; i <= dataSet.Tables[0].Rows.Count - 1; i++)
         Console.WriteLine(dataSet.Tables[0].Rows[i].ItemArray[0] + " -- " + dataSet.Tables[0].Rows[i].ItemArray[1]);
     }
+
+    
   }
 }
