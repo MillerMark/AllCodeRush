@@ -64,7 +64,12 @@
     <Compile Include="Code\Methods\SafeRename.cs" />
     <Compile Include="Code\Methods\Support\Item.cs" />
     <Compile Include="Code\Methods\Support\ShoppingCart.cs" />
+    <Compile Include="Code\Types\AddToInterface.cs" />
+    <Compile Include="Code\Types\CreateAncestor.cs" />
+    <Compile Include="Code\Types\CreateDescendant.cs" />
+    <Compile Include="Code\Types\CreateDescendantWithVirtualOverrides.cs" />
     <Compile Include="Code\Types\CreateImplementerExplicit.cs" />
+    <Compile Include="Code\Types\CreateImplementerImplicit.cs" />
     <Compile Include="Code\Types\DeclareClass.cs" />
     <Compile Include="Code\Types\DeclareClassWithProperties.cs" />
     <Compile Include="Code\Types\DeclareInterface.cs" />
@@ -284,7 +289,6 @@
     <Folder Include="Code\Test\" />
     <Folder Include="Code\Two-dimensions\" />
     <Folder Include="Code\Typecasting + Conversion\" />
-    <Folder Include="Code\Types\" />
     <Folder Include="Code\Visibility + Scope\" />
     <Folder Include="Code\Web\" />
     <Folder Include="Code\XML + HTML + XAML\" />
