@@ -28,9 +28,9 @@ namespace AllCodeRush.Code.Methods
       int id = 0;
       string workStr = idStr;
 
-      if (workStr != null && id != -1 && !int.TryParse(workStr, out id))
+      if (workStr != null && id != -1 && !int.TryParse(idStr, out id))
       {
-        workStr = string.Format("Error: \"{0}\" is not an integer.", workStr);
+        idStr = string.Format("Error: \"{0}\" is not an integer.", idStr);
         id = -1;
       }
       

@@ -21,7 +21,6 @@ namespace AllCodeRush.Code.Methods.Parameters
         
       See also: Introduce Parameter Object
      •———————————————————————————————————————————————————————• */
-
   public class Email
   {
     public static string Signature { get; set; }
