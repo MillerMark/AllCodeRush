@@ -15,13 +15,19 @@ namespace AllCodeRush.Code.Methods
 			See also: Make Member Non-Static
 		 •———————————————————————————————————————————————————————• */
 
-	public class MakeMemberStatic
+	public class VolumeCalc
 	{
     public double CalculateTorusVolume(double innerRadius, double outerRadius)
     {
       double totalRadius = innerRadius + outerRadius;
       double diameter = outerRadius - innerRadius;
       return totalRadius * Math.Pow(diameter * Math.PI, 2) / 4;
+    }
+
+    public void TestCalc()
+    {
+      if (CalculateTorusVolume(3, 4) != 710.61)
+        throw new Exception("Problem with calculator.");
     }
 
 		#region Additional
@@ -33,4 +39,13 @@ namespace AllCodeRush.Code.Methods
 		}
 		#endregion
 	}
+
+  public class Consumer
+  {
+    public void GetVolume(VolumeCalc calc)
+    {
+      calc.CalculateTorusVolume(3, 3);
+    }
+    
+  }
 }

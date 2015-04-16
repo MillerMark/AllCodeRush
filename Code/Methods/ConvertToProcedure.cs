@@ -8,8 +8,7 @@ namespace AllCodeRush.Code.Methods
       Use Case: Converts a function into a void proc (or a 
       sub in VB).
             
-    	Available: When the caret is on the name of a private 
-      function.
+    	Available: When the caret is on the name of a function.
    
       See also: Convert to Function, Reorder Parameters
      •———————————————————————————————————————————————————————• */

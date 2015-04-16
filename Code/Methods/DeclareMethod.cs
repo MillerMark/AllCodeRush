@@ -2,6 +2,7 @@
 
 namespace AllCodeRush.Code.Methods
 {
+ 
 	/* •———————————————————————————————————————————————————————•
 			Feature: Declare Method
         
@@ -12,23 +13,18 @@ namespace AllCodeRush.Code.Methods
         
 			See also: Declare Method (Abstract)
 		 •———————————————————————————————————————————————————————• */
-	public class Account
+  public class Account: BaseAccount
 	{
-		private int _value;
-		public Account(int Value)
+		public Account(int value)
 		{
-			_value = Value;
-		}
-		public void TransferMoney(Account DestAccount, int Value)
-		{
-			this.Withdraw(Value);
-			DestAccount.Deposit(Value);
-      LogBalance(DateTime.Now, DestAccount);
+      balance = value;
 		}
 
-		public void Withdraw(int value)
+    public void TransferMoney(BaseAccount destinationAccount, int value)
 		{
-			_value -= value;
+			Withdraw(value);
+			destinationAccount.Deposit(value);
+      LogBalance(DateTime.Now, destinationAccount);
 		}
 	}
 }

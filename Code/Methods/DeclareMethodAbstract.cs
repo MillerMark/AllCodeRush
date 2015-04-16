@@ -16,10 +16,10 @@ namespace AllCodeRush.Code.Methods
 
   public abstract class Prism
 	{
-    protected double height;
-    public void CalculateVolume()
+    protected double depth;
+    public double CalculateVolume(double containingWidth, double containingHeight)
 		{
-			return CalculateBaseArea() * height;
+			return CalculateBase(containingWidth, containingHeight) * depth;
 		}
 	}
 }
