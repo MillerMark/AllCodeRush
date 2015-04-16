@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace AllCodeRush.Code.Types.DeclareInterface
+namespace AllCodeRush.Code.Types
 {
 	/* •—————————————————————————————————————————————————————————•
 			Feature: Declare Struct

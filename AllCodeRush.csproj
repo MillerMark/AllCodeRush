@@ -74,6 +74,11 @@
     <Compile Include="Code\Types\DeclareClassWithProperties.cs" />
     <Compile Include="Code\Types\DeclareInterface.cs" />
     <Compile Include="Code\Types\DeclareStruct.cs" />
+    <Compile Include="Code\Types\MoveTypeToFile.cs" />
+    <Compile Include="Code\Types\MoveTypeToNamespace.cs" />
+    <Compile Include="Code\Types\RenameFileToMatchType.cs" />
+    <Compile Include="Code\Types\RenameTypeToMatchFile.cs" />
+    <Compile Include="Code\Types\SealClass.cs" />
     <Compile Include="Code\Types\Support\ShoppingCart.cs" />
     <Compile Include="Code\_Lambda Expressions + Anonymous Methods\Support\BaseNameAnonymousMethod.cs" />
     <Compile Include="Code\_Dead Code\RemoveEmptyHandler.cs" />
