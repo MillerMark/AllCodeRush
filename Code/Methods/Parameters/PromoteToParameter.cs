@@ -25,6 +25,12 @@ namespace AllCodeRush.Code.Methods.Parameters
     private const string STR_DearCustomer = "Dear {0},";
 
 
+    private static string GetDefaultBody()
+    {
+      return "It has been a while since we have heard from you. " +
+                            "Don't let that pesky road runner get the best of you! " +
+                            "Stop by our web site for a special promotion!";
+    }
     public static void Send()
     {
       string customerEmail = "wile.e.coyote@looneytunes.com";
@@ -39,9 +45,7 @@ namespace AllCodeRush.Code.Methods.Parameters
         mail.Subject = "New Traps Available!";
 
         string greeting = String.Format(STR_DearCustomer, "Mr. Coyote");
-        string body = "It has been a while since we have heard from you. " +
-                      "Don't let that pesky road runner get the best of you! " +
-                      "Stop by our web site for a special promotion!";
+        string body = GetDefaultBody();
         string signature = "Yours truly, " + Environment.NewLine + "Acme Sales Team";
 
         mail.Body = greeting + Environment.NewLine + body + Environment.NewLine + signature;
@@ -50,20 +54,9 @@ namespace AllCodeRush.Code.Methods.Parameters
     }
 
 
-		#region Support
 		public void main()
 		{
-			Log("Starting Application");
-			try
-			{
-				throw new Exception("Bad things happened");
-			}
-			catch (Exception ex)
-			{
-				Log(String.Format("Something went very wrong:{0}", ex.Message));
-			}
-			Log("Ending Application");
+			Send();
 		}
-		#endregion
 	}
 }

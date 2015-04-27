@@ -4,7 +4,6 @@ using System.Net.Mail;
 
 namespace AllCodeRush.Code.Methods.Parameters
 {
-
   /* •———————————————————————————————————————————————————————•
       Feature: Decompose Parameter
         
