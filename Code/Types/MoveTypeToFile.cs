@@ -15,7 +15,7 @@ namespace AllCodeRush.Code.Types
 		 •—————————————————————————————————————————————————————————• */
 	public class Store
 	{
-		private List<Shelf> _shelves = new List<Shelf>();
+		private List<Shelf> _Shelves = new List<Shelf>();
 		public Store()
 		{
 			_Shelves.Add(new Shelf("Fresh Vegetables"));

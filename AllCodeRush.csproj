@@ -67,6 +67,10 @@
     <Compile Include="Code\Methods\SafeRename.cs" />
     <Compile Include="Code\Methods\Support\Item.cs" />
     <Compile Include="Code\Methods\Support\ShoppingCart.cs" />
+    <Compile Include="Code\Typecasting + Conversion\ConvertToBuiltInType.cs" />
+    <Compile Include="Code\Typecasting + Conversion\ConvertToInteger.cs" />
+    <Compile Include="Code\Typecasting + Conversion\ConvertToSystemType.cs" />
+    <Compile Include="Code\Typecasting + Conversion\EncapsulateDowncast.cs" />
     <Compile Include="Code\Types\AddToInterface.cs" />
     <Compile Include="Code\Types\CreateAncestor.cs" />
     <Compile Include="Code\Types\CreateDescendant.cs" />
@@ -296,7 +300,6 @@
     <Folder Include="Code\Strings\" />
     <Folder Include="Code\Test\" />
     <Folder Include="Code\Two-dimensions\" />
-    <Folder Include="Code\Typecasting + Conversion\" />
     <Folder Include="Code\Visibility + Scope\" />
     <Folder Include="Code\Web\" />
     <Folder Include="Code\XML + HTML + XAML\" />
