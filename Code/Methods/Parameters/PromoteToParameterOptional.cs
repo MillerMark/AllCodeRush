@@ -23,7 +23,6 @@ namespace AllCodeRush.Code.Methods.Parameters
 			Console.WriteLine(messagePrefix + Message);
 		}
 
-		#region Support
 		public void main()
 		{
 			Log("Starting Application");
@@ -37,6 +36,5 @@ namespace AllCodeRush.Code.Methods.Parameters
 			}
 			Log("Ending Application");
 		}
-		#endregion
 	}
 }
