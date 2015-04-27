@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Mail;
-using System.Drawing;
 
 namespace AllCodeRush.Code.Methods.Parameters
 {

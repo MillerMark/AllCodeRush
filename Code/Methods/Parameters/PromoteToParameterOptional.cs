@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AllCodeRush.Code.Methods.Parameters
 {
@@ -22,13 +19,8 @@ namespace AllCodeRush.Code.Methods.Parameters
 	{
 		public void Log(string Message)
 		{
-
-			//TODO: Why is this refactoring not available here?
-			Console.WriteLine("Error" + Message);
-
-			// But works fine here.
-			string LogType = "Error";
-			Console.WriteLine(LogType + Message);
+			string messagePrefix = "Error: ";
+			Console.WriteLine(messagePrefix + Message);
 		}
 
 		#region Support

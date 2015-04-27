@@ -2,6 +2,30 @@ using System;
 
 namespace AllCodeRush.Code.Methods.Parameters
 {
+  /* •———————————————————————————————————————————————————————•
+      Feature: Convert to Tuple
+          
+      Use Case: Converts two or more adjacent parameters into 
+      a single Tuple parameter.
+           
+      Available:  
+        - When two adjacent double or int parameters are 
+          selected.
+          
+      See also: Convert to Point, Introduce Parameter Object,
+      Reorder Parameters
+     •———————————————————————————————————————————————————————• */
+  public enum Heading
+  {
+    North,
+    NorthEast,
+    East,
+    SouthEast,
+    South,
+    SouthWest,
+    West,
+    NorthWest
+  }
   public class ConvertToTuple
   {
     private static void SetHeading(ref Heading heading, double degrees, int startAngle, Heading setting)
