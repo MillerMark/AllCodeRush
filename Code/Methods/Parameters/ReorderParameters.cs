@@ -27,26 +27,28 @@ namespace AllCodeRush.Code.Methods.Parameters
 
   public class ReorderParameters
   {
-    private static void SetDirection(double degrees, Direction setting, ref Direction direction, int startAngle)
+    private static void SetDirection(int startAngle, double degrees, Direction setting, ref Direction direction)
     {
       double half45 = 45 / 2.0;
       if (degrees >= startAngle - half45 && degrees < startAngle + half45)
         direction = setting;
     }
 
-    public static void GetPolarCoordinates(out double radius, out double degrees, double y, double x, out Direction direction)
+    public static void GetPolarCoordinates(out double radius, out double degrees,
+                                           double y, double x,
+                                           out Direction direction)
     {
       radius = Math.Sqrt((x * x) + (y * y));
       degrees = Math.Atan2(y, x) * 180 / Math.PI;
       direction = Direction.North;
 
-      SetDirection(degrees, Direction.NorthEast, ref direction, 45);
-      SetDirection(degrees, Direction.East, ref direction, 90);
-      SetDirection(degrees, Direction.SouthEast, ref direction, 135);
-      SetDirection(degrees, Direction.South, ref direction, 180);
-      SetDirection(degrees, Direction.SouthWest, ref direction, 225);
-      SetDirection(degrees, Direction.West, ref direction, 270);
-      SetDirection(degrees, Direction.NorthWest, ref direction, 315);
+      SetDirection(45, degrees, Direction.NorthEast, ref direction);
+      SetDirection(90, degrees, Direction.East, ref direction);
+      SetDirection(135, degrees, Direction.SouthEast, ref direction);
+      SetDirection(180, degrees, Direction.South, ref direction);
+      SetDirection(225, degrees, Direction.SouthWest, ref direction);
+      SetDirection(270, degrees, Direction.West, ref direction);
+      SetDirection(315, degrees, Direction.NorthWest, ref direction);
     }
   }
 
