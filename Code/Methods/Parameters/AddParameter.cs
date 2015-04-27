@@ -14,7 +14,7 @@ namespace AllCodeRush.Code.Methods.Parameters
        •———————————————————————————————————————————————————————• */
   public class AddParameter
   {
-    UndoEngine undoEngine = new UndoEngine();
+    readonly UndoEngine undoEngine = new UndoEngine();
       
     public void CompressDrive(Drive drive)
     {
@@ -55,6 +55,13 @@ namespace AllCodeRush.Code.Methods.Parameters
         throw new Exception("Problem with payment calculator!");
       if (CalculateMonthlyPayment(72, 6.9, 18300) != 311.12m)
         throw new Exception("Problem with payment calculator!");
+    }
+    public UndoEngine UndoEngine
+    {
+      get
+      {
+        return undoEngine;
+      }
     }
   }
 }
