@@ -8,12 +8,12 @@ namespace AllCodeRush.Code.Methods.Parameters
         Use Case: Adds a parameter to the method or 
         constructor at the caret.
            
-        Available: .
-          
+        Available: When the caret is in the arguments section
+        of a method call or when the caret is in the parameters
+        section of a method declaration.
        •———————————————————————————————————————————————————————• */
   public class AddParameter
   {
-    // TODO: Add support for a down payment into the calculation.
     /// <summary>
     /// Calculates the montly payments for a purchased item, given 
     /// the interest rate (e.g., 8.5 for 8.5%), the purchase price,
@@ -34,9 +34,11 @@ namespace AllCodeRush.Code.Methods.Parameters
 
     public void TestPaymentCalculator(Loan testLoan)
     {
+      // TODO: Add support for a down payment into the calculation.
       if (CalculateMonthlyPayment(testLoan.Months, testLoan.InterestRate, testLoan.ItemPrice) != testLoan.ExpectedMonthlyPayment)
         throw new Exception("Problem with payment calculator!");
     }
+
     public void TestPaymentCalculator()
     {
       if (CalculateMonthlyPayment(56, 7.5, 23500) != 498.65m)
