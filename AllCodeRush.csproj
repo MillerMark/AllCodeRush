@@ -55,10 +55,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Code\Methods\Parameters\AddParameter.cs" />
+    <Compile Include="Code\Methods\Parameters\ConvertToPoint.cs" />
+    <Compile Include="Code\Methods\Parameters\ConvertToTuple.cs" />
     <Compile Include="Code\Methods\Parameters\Support\CourseChange.cs" />
-    <Compile Include="Code\Methods\Parameters\Support\Directions.cs" />
-    <Compile Include="Code\Methods\Parameters\Support\Location.cs" />
-    <Compile Include="Code\Methods\Parameters\Support\Step.cs" />
     <Compile Include="Code\Methods\Parameters\Support\FileAttributes.cs" />
     <Compile Include="Code\Methods\Parameters\Support\Drive.cs" />
     <Compile Include="Code\Methods\Parameters\Support\File.cs" />
