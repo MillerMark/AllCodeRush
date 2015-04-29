@@ -55,7 +55,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Code\Methods\Parameters\AddParameter.cs" />
+    <Compile Include="Code\Methods\Parameters\ConvertToPoint.cs" />
+    <Compile Include="Code\Methods\Parameters\ConvertToTuple.cs" />
+    <Compile Include="Code\Methods\Parameters\ReorderParameters.cs" />
+    <Compile Include="Code\Methods\Parameters\Support\CourseChange.cs" />
+    <Compile Include="Code\Methods\Parameters\Support\FileAttributes.cs" />
+    <Compile Include="Code\Methods\Parameters\Support\Drive.cs" />
+    <Compile Include="Code\Methods\Parameters\Support\File.cs" />
+    <Compile Include="Code\Methods\Parameters\Support\Folder.cs" />
     <Compile Include="Code\Methods\Parameters\Support\Loan.cs" />
+    <Compile Include="Code\Methods\Parameters\Support\UndoEngine.cs" />
     <Compile Include="Code\Methods\Support\BaseAccount.cs" />
     <Compile Include="Code\Methods\Parameters\Support\Customer.cs" />
     <Compile Include="Code\Methods\Support\AuthenticationCode.cs" />
