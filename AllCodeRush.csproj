@@ -70,7 +70,9 @@
     <Compile Include="Code\Typecasting + Conversion\ConvertToBuiltInType.cs" />
     <Compile Include="Code\Typecasting + Conversion\ConvertToInteger.cs" />
     <Compile Include="Code\Typecasting + Conversion\ConvertToSystemType.cs" />
+    <Compile Include="Code\Typecasting + Conversion\Support\Customer.cs" />
     <Compile Include="Code\Typecasting + Conversion\EncapsulateDowncast.cs" />
+    <Compile Include="Code\Typecasting + Conversion\UseExplicitTypecast.cs" />
     <Compile Include="Code\Types\AddToInterface.cs" />
     <Compile Include="Code\Types\CreateAncestor.cs" />
     <Compile Include="Code\Types\CreateDescendant.cs" />
