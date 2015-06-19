@@ -15,16 +15,17 @@ namespace AllCodeRush.Code.Methods
 		 •———————————————————————————————————————————————————————• */
   public class Account: BaseAccount
 	{
-		public Account(int value)
+
+    public Account(int value)
 		{
       balance = value;
 		}
 
     public void TransferMoney(BaseAccount destinationAccount, int value)
-		{
-			Withdraw(value);
-			destinationAccount.Deposit(value);
+    {
+      Withdraw(value);
+      destinationAccount.Deposit(value);
       LogBalance(DateTime.Now, destinationAccount);
-		}
-	}
+    }
+  }
 }

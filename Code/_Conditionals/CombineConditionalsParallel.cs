@@ -24,8 +24,10 @@ namespace AllCodeRush.Code.Conditionals
     {
       if (a)
         return true;
+
       if (b)
         return true;
+
       if (c)
         return true;
 

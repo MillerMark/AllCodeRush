@@ -19,4 +19,5 @@ namespace AllCodeRush.Code.EventsDelegates
     // TODO: HoloLensEventArgs should have a Position property (of type Point3D)
     public delegate void HoloLensEventHandler(object sender, HoloLensEventArgs ea);
   }
+  
 }

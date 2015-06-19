@@ -1,11 +1,11 @@
 using System;
 using System.ComponentModel;
-
+using System.Collections.Generic;
 namespace AllCodeRush.Code.EventsDelegates
 {
   /* •———————————————————————————————————————————————————————•
         Feature: Event Declaration Templates
-          
+
         Use Case: Makes it easier to create event-related 
         code.
        •———————————————————————————————————————————————————————• */
@@ -16,20 +16,16 @@ namespace AllCodeRush.Code.EventsDelegates
   {
     // ev
 
-
     // evar
-
 
     // os, osea, eae, 
 
-    
     // eh
-    
-    
+
     // ehl
-    
 
     // ev., ev.?Type? etc
-    
+
   }
+
 }
