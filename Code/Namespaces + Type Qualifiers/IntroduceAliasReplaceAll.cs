@@ -2,20 +2,21 @@ using System;
 
 namespace AllCodeRush.Code.NamespacesTypeQualifiers
 {
-	/* •—————————————————————————————————————————————————————————•
-	    Feature: Introduce Alias (Replace All)
+  /* •—————————————————————————————————————————————————————————•
+      Feature: Introduce Alias (Replace All)
          
-	    Use Case: Introduces a new file-scoped alias for the 
-	    current type or namespace name, and replaces it with the 
-	    newly-created alias.
+      Use Case: Introduces a new file-scoped alias for the 
+      current type or namespace name, and replaces it with the 
+      newly-created alias.
 	 
-			Available: When the caret is on a reference to a type. 
-	    This reference should contain namespace information. 
+      Available: When the caret is on a reference to a type. 
+      This reference should contain namespace information. 
  
-      See also: Introduce Alias, Inline Alias
-		 •—————————————————————————————————————————————————————————• */
+      See also: Introduce Alias, Inline Alias, Remove Type 
+                Qualifier, Remove Type Qualifier (Remove All)
+     •—————————————————————————————————————————————————————————• */
 
-	public class IntroduceAliasReplaceAll
+  public class IntroduceAliasReplaceAll
 	{
 		public Space.SolarSystem BuildPlanetarySystem()
 		{

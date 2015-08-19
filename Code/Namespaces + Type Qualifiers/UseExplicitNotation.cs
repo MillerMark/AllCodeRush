@@ -2,20 +2,23 @@ using System;
 
 namespace AllCodeRush.Code.NamespacesTypeQualifiers
 {
-	/* •—————————————————————————————————————————————————————————•
-	    Feature: Use Explicit Notation
+  /* •—————————————————————————————————————————————————————————•
+      Feature: Use Explicit Notation
          
-	    Use Case: Converts a short form of a nullable type 
-	    reference to its explicit form.
+      Use Case: Converts a short form of a nullable type 
+      reference to its explicit form.
 	 
-			Available: When the cursor is on a short form reference to 
-	    the nullable type.  
-		 •—————————————————————————————————————————————————————————• */
+      Available: When the cursor is on a short form reference to 
+      the nullable type.
 
-	public class UseExplicitNotation
+      See also: Use Short Notation
+     •—————————————————————————————————————————————————————————• */
+
+  public class UseExplicitNotation
 	{
 		public int? PlanetCount;
-		public string GetSystemDescription()
+    
+    public string GetSystemDescription()
 		{
 			if (PlanetCount.HasValue)
 				return String.Format("System with {0} planets", PlanetCount);
