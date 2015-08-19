@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace AllCodeRush.Code.NamespacesTypeQualifiers
 {
@@ -18,7 +16,7 @@ namespace AllCodeRush.Code.NamespacesTypeQualifiers
 	{
 		Nullable <bool> IsCatAlive;
 
-		private void CheckOnShrodingersCat()
+		public void CheckOnShrodingersCat()
 		{
 			if (!IsCatAlive.HasValue)
 				Console.WriteLine("Anything is still possible.");

@@ -118,7 +118,7 @@
     <Compile Include="Code\Namespaces + Type Qualifiers\IntroduceAlias.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\IntroduceAliasReplaceAll.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\OptimizeNamespaceReferences.cs" />
-    <Compile Include="Code\Namespaces + Type Qualifiers\RemoveTypeQualifierReplaceAll.cs" />
+    <Compile Include="Code\Namespaces + Type Qualifiers\RemoveTypeQualifierRemoveAll.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\Support\Settings.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\SortNamespaceReferences.cs" />
     <Compile Include="Code\Namespaces + Type Qualifiers\Support\Universe\Body.cs" />
@@ -141,6 +141,10 @@
     <Compile Include="Code\_Lambda Expressions + Anonymous Methods\NameAnonymousMethod.cs" />
     <Compile Include="Code\_Methods\Support\CartEntry.cs" />
     <Compile Include="Code\_Methods\Support\Cart.cs" />
+    <Compile Include="Format\BaseCodeCleanup.cs" />
+    <None Include="Format\CodeCleanupOriginal.cs" />
+    <Compile Include="Format\CodeCleanup.cs" />
+    <Compile Include="Format\CodeFormat.cs" />
     <Compile Include="Options\Editor\CodeFormatting.cs" />
     <Compile Include="Code\_Events + Delegates\DeclareDelegate.cs" />
     <Compile Include="Code\_Events + Delegates\DeclareEvent.cs" />
@@ -235,7 +239,6 @@
     <Compile Include="Navigate\Bookmarks\JumpToBookmark.cs" />
     <Compile Include="Navigate\Bookmarks\NamedBookmarks.cs" />
     <Compile Include="Navigate\CamelCase\CamelCaseLeftRightExtend.cs" />
-    <Compile Include="Navigate\File\BrowseRecentFiles.cs" />
     <Compile Include="Navigate\Markers\SwapMarkers.cs" />
     <Compile Include="Navigate\Markers\CollectMarker.cs" />
     <Compile Include="Navigate\Markers\DropMarker.cs" />
@@ -317,7 +320,7 @@
     <Folder Include="Consolidate\" />
     <Folder Include="Debug\" />
     <Folder Include="Decompile\" />
-    <Folder Include="Format\" />
+    <Folder Include="Navigate\File\" />
     <Folder Include="Select\" />
     <Folder Include="Setup\" />
     <Folder Include="Test\" />

@@ -5,11 +5,10 @@ using System.Text;
 
 namespace AllCodeRush.Space.Bodies.Planets
 {
-	public class Planet : Body
-	{
-		public Planet()
-		{
-
-		}
-	}
+  public class Planet : Body {
+    public double Angle { get; set; }
+    public Planet ()
+    {
+    }
+  }
 }

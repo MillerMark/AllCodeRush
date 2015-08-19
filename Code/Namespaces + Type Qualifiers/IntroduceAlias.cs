@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace AllCodeRush.Code.NamespacesTypeQualifiers
 {
@@ -14,14 +12,15 @@ namespace AllCodeRush.Code.NamespacesTypeQualifiers
 			Available: When the caret is on a reference to a type. 
 	    This reference should contain namespace information. 
 		 •—————————————————————————————————————————————————————————• */
-	public class IntroduceAlias
+
+  public class IntroduceAlias
 	{
 		public Space.SolarSystem BuildSimpleSolarSystem()
 		{
-			Space.SolarSystem Sol = new Space.SolarSystem();
-			Sol.Stars.Add(new Space.Bodies.Star() {Name="Sol"});
-			Sol.Planets.Add(new Space.Bodies.Planets.Planet() { Name = "Earth" });
-			return Sol;
+			Space.SolarSystem solarSystem = new Space.SolarSystem();
+			solarSystem.Stars.Add(new Space.Bodies.Star() {Name="Sol"});
+			solarSystem.Planets.Add(new Space.Bodies.Planets.Planet() { Name = "Earth" });
+			return solarSystem;
 		}
 	}
 }

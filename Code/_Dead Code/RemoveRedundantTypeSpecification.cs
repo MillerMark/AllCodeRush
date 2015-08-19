@@ -1,8 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace AllCodeRush.Code.DeadCode
-{
+namespace AllCodeRush.Code.DeadCode {
   /* •———————————————————————————————————————————————————————•
       Feature: Remove Redundant Type Specification.
         
@@ -12,20 +11,18 @@ namespace AllCodeRush.Code.DeadCode
       Available: When the caret is within a lambda expression 
       parameters list that includes type specifiers.
      •—————————————————————————————————————————————————————————• */
-  public class RemoveRedundantTypeSpecification : Form
-  {
-    public RemoveRedundantTypeSpecification()
+  public class RemoveRedundantTypeSpecification : Form {
+    public RemoveRedundantTypeSpecification ()
     {
       InitializeComponent();
-      btnLoad.Click += async (object sender, EventArgs e) =>
-                       {
-                         await LoadListboxChoicesAsync();
-                         base.txtStatus.Text += "Button clicked.";
-                       };
+      btnLoad.Click += async (object sender, EventArgs e) => {
+        await LoadListboxChoicesAsync();
+        base.txtStatus.Text += "Button clicked.";
+      };
     }
 
     #region Support
-    async Task LoadListboxChoicesAsync()
+    async Task LoadListboxChoicesAsync ()
     {
       await Task.Delay(1000);
     }

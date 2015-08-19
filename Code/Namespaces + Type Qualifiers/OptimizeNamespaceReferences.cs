@@ -8,14 +8,17 @@ using AllCodeRush;
 
 namespace AllCodeRush.Code.NamespacesTypeQualifiers
 {
-	/* •—————————————————————————————————————————————————————————•
-	    Feature: Optimize Namespace References
+  /* •—————————————————————————————————————————————————————————•
+      Feature: Optimize Namespace References
          
-	    Use Case: Removes unused namespace references.
+      Use Case: Removes unused namespace references.
 	 
-			Available: When the caret is on a using statement. 
-		 •—————————————————————————————————————————————————————————• */
-	public class OptimizeNamespaceReferences
+      Available: When the caret is on a using or imports 
+      statement. 
+
+      See also: Sort Namespace References
+     •—————————————————————————————————————————————————————————• */
+  public class OptimizeNamespaceReferences
 	{
 		public double CalculateGravitationalConstant()
 		{

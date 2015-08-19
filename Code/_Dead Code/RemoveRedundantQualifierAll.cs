@@ -30,7 +30,6 @@ namespace AllCodeRush.Code.DeadCode
       this.Withdraw(value);
       account.Deposit(value);
     }
-
     public decimal GetBalance()
     {
       return this.Balance;

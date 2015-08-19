@@ -8,9 +8,8 @@ namespace AllCodeRush.Code.DeadCode
       Use Case: Removes all the unused parameters from a method 
       declaration and updates all calls accordingly.
   	 
-      Available: When the caret is within the declaration of a 
-      method parameter and that parameter is unused within the 
-      method.
+      Available: When the caret is in the name of a method 
+      declaration that has two or more unused parameters.
       
       See also: Remove Unused Parameter
      •—————————————————————————————————————————————————————————• */

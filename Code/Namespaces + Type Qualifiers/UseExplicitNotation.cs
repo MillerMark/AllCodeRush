@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace AllCodeRush.Code.NamespacesTypeQualifiers
 {
@@ -17,12 +15,12 @@ namespace AllCodeRush.Code.NamespacesTypeQualifiers
 	public class UseExplicitNotation
 	{
 		public int? PlanetCount;
-		private string SystemDescription()
+		public string GetSystemDescription()
 		{
 			if (PlanetCount.HasValue)
 				return String.Format("System with {0} planets", PlanetCount);
 			else
-				return "We do not know how many planets are in this unexplored system";
+				return "We do not know how many planets are in this unexplored system.";
 		}
 	}
 

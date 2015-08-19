@@ -16,8 +16,11 @@ namespace AllCodeRush.Code.NamespacesTypeQualifiers
 	    by length, or alphabetically..
 	 
 			Available: When the cursor is anywhere within the using 
-	    section. 
+	    section.
+
+      See also: Optimize Namespace References
 		 •—————————————————————————————————————————————————————————• */
+
 	public class SortNamespaceReferences
 	{
 		public SolarSystem LoadGalaxy()
