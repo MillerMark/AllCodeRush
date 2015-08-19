@@ -11,6 +11,8 @@ namespace AllCodeRush.Code.NamespacesTypeQualifiers
 	 
 			Available: When the caret is on a reference to a type. 
 	    This reference should contain namespace information. 
+ 
+      See also: Introduce Alias, Inline Alias
 		 •—————————————————————————————————————————————————————————• */
 
 	public class IntroduceAliasReplaceAll
