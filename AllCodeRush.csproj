@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Code\Selections\Checkbox.cs" />
+    <Compile Include="Code\Selections\Embedding.cs" />
+    <Compile Include="Code\Templates\MemberCreation.cs" />
     <Compile Include="Code\_Methods\Parameters\AddParameter.cs" />
     <Compile Include="Code\_Methods\Parameters\ConvertToPoint.cs" />
     <Compile Include="Code\_Methods\Parameters\ConvertToTuple.cs" />
@@ -145,6 +148,7 @@
     <None Include="Format\CodeCleanupOriginal.cs" />
     <Compile Include="Format\CodeCleanup.cs" />
     <Compile Include="Format\CodeFormat.cs" />
+    <Compile Include="Navigate\Markers\DropMarkerBeforeJump.cs" />
     <Compile Include="Options\Editor\CodeFormatting.cs" />
     <Compile Include="Code\_Events + Delegates\DeclareDelegate.cs" />
     <Compile Include="Code\_Events + Delegates\DeclareEvent.cs" />
@@ -310,7 +314,6 @@
     <Folder Include="Code\Properties + Fields\" />
     <Folder Include="Code\Rename\" />
     <Folder Include="Code\Resource Files\" />
-    <Folder Include="Code\Selections\" />
     <Folder Include="Code\Strings\" />
     <Folder Include="Code\Test\" />
     <Folder Include="Code\Two-dimensions\" />
